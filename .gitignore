@@ -1,0 +1,17 @@
+# Dépôts de référence (lecture seule, jamais committés)
+reference/
+
+# Environnement Python
+.venv/
+__pycache__/
+*.pyc
+
+# Données de marché volumineuses (retéléchargeables, jamais committées)
+user_data/data/
+data/raw/
+*.zip
+*.feather
+
+# Divers
+.pytest_cache/
+*.log
