@@ -19,6 +19,7 @@ Stdlib uniquement (tourne avant l'installation du venv).
 import csv
 import io
 import json
+import re
 import sys
 import time
 import urllib.error
@@ -111,9 +112,14 @@ def classify_exclusion(sym: str):
 
 
 def main():
+    # Console Windows cp1252 → forcer UTF-8 pour ne pas crasher sur les messages.
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    sys.stderr.reconfigure(encoding="utf-8", errors="replace")
     print("Énumération des symboles de l'archive…", flush=True)
     all_syms = list_symbols()
-    usdt = [s for s in all_syms if s.endswith("USDT")]
+    # Un symbole spot Binance légitime est ASCII alphanumérique majuscule ;
+    # l'archive contient quelques entrées parasites (ex. noms unicode) → filtrées.
+    usdt = [s for s in all_syms if re.fullmatch(r"[A-Z0-9]+USDT", s)]
     print(f"{len(all_syms)} symboles au total, {len(usdt)} en *USDT", flush=True)
 
     results, missing = [], []

@@ -1,0 +1,1574 @@
+{
+  "n_symbols_usdt_avec_donnees": 224,
+  "erreurs_reseau": [],
+  "classement": [
+    {
+      "symbol": "BTCUSDT",
+      "quote_volume_2020_12": 55748654003.59773,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 1
+    },
+    {
+      "symbol": "ETHUSDT",
+      "quote_volume_2020_12": 19119402122.69965,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 2
+    },
+    {
+      "symbol": "XRPUSDT",
+      "quote_volume_2020_12": 16214213587.29052,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 3
+    },
+    {
+      "symbol": "LTCUSDT",
+      "quote_volume_2020_12": 6957456546.267642,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 4
+    },
+    {
+      "symbol": "BUSDUSDT",
+      "quote_volume_2020_12": 5293470894.218457,
+      "days": 31,
+      "exclusion": "stablecoin",
+      "rang_brut": 5
+    },
+    {
+      "symbol": "GRTUSDT",
+      "quote_volume_2020_12": 4785323630.282073,
+      "days": 15,
+      "exclusion": null,
+      "rang_brut": 6
+    },
+    {
+      "symbol": "BCHUSDT",
+      "quote_volume_2020_12": 3013388964.0919003,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 7
+    },
+    {
+      "symbol": "LINKUSDT",
+      "quote_volume_2020_12": 2793631117.2634826,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 8
+    },
+    {
+      "symbol": "BNBUSDT",
+      "quote_volume_2020_12": 2652009559.39018,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 9
+    },
+    {
+      "symbol": "ADAUSDT",
+      "quote_volume_2020_12": 2580882228.387686,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 10
+    },
+    {
+      "symbol": "XLMUSDT",
+      "quote_volume_2020_12": 1846158265.8724213,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 11
+    },
+    {
+      "symbol": "DOTUSDT",
+      "quote_volume_2020_12": 1834212752.1293612,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 12
+    },
+    {
+      "symbol": "YFIUSDT",
+      "quote_volume_2020_12": 1727263586.53282,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 13
+    },
+    {
+      "symbol": "USDCUSDT",
+      "quote_volume_2020_12": 1664238958.1497157,
+      "days": 31,
+      "exclusion": "stablecoin",
+      "rang_brut": 14
+    },
+    {
+      "symbol": "EOSUSDT",
+      "quote_volume_2020_12": 1608872990.2974753,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 15
+    },
+    {
+      "symbol": "ZILUSDT",
+      "quote_volume_2020_12": 1266867126.2175686,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 16
+    },
+    {
+      "symbol": "SUSHIUSDT",
+      "quote_volume_2020_12": 1181076731.8139653,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 17
+    },
+    {
+      "symbol": "XRPDOWNUSDT",
+      "quote_volume_2020_12": 1142826850.4187,
+      "days": 31,
+      "exclusion": "token_levier",
+      "rang_brut": 18
+    },
+    {
+      "symbol": "TRXUSDT",
+      "quote_volume_2020_12": 1087515393.019593,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 19
+    },
+    {
+      "symbol": "XRPUPUSDT",
+      "quote_volume_2020_12": 1041024398.10892,
+      "days": 31,
+      "exclusion": "token_levier",
+      "rang_brut": 20
+    },
+    {
+      "symbol": "UNIUSDT",
+      "quote_volume_2020_12": 890050207.1812438,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 21
+    },
+    {
+      "symbol": "VETUSDT",
+      "quote_volume_2020_12": 850395392.8087221,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 22
+    },
+    {
+      "symbol": "THETAUSDT",
+      "quote_volume_2020_12": 758757707.693622,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 23
+    },
+    {
+      "symbol": "AAVEUSDT",
+      "quote_volume_2020_12": 745163810.372606,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 24
+    },
+    {
+      "symbol": "1INCHUSDT",
+      "quote_volume_2020_12": 719511516.54155,
+      "days": 7,
+      "exclusion": null,
+      "rang_brut": 25
+    },
+    {
+      "symbol": "FILUSDT",
+      "quote_volume_2020_12": 687783344.8138801,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 26
+    },
+    {
+      "symbol": "EGLDUSDT",
+      "quote_volume_2020_12": 687523570.3256352,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 27
+    },
+    {
+      "symbol": "EURUSDT",
+      "quote_volume_2020_12": 612062061.901984,
+      "days": 31,
+      "exclusion": "fiat",
+      "rang_brut": 28
+    },
+    {
+      "symbol": "ETCUSDT",
+      "quote_volume_2020_12": 587932912.1689,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 29
+    },
+    {
+      "symbol": "XMRUSDT",
+      "quote_volume_2020_12": 517449791.1800108,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 30
+    },
+    {
+      "symbol": "UNFIUSDT",
+      "quote_volume_2020_12": 489839919.177622,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 31
+    },
+    {
+      "symbol": "ZECUSDT",
+      "quote_volume_2020_12": 478878212.8491563,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 32
+    },
+    {
+      "symbol": "DASHUSDT",
+      "quote_volume_2020_12": 467033317.1382245,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 33
+    },
+    {
+      "symbol": "SXPUSDT",
+      "quote_volume_2020_12": 419890839.34781003,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 34
+    },
+    {
+      "symbol": "WAVESUSDT",
+      "quote_volume_2020_12": 413790594.393321,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 35
+    },
+    {
+      "symbol": "SNXUSDT",
+      "quote_volume_2020_12": 392554428.74779207,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 36
+    },
+    {
+      "symbol": "CRVUSDT",
+      "quote_volume_2020_12": 385749140.729922,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 37
+    },
+    {
+      "symbol": "NEOUSDT",
+      "quote_volume_2020_12": 369320322.471813,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 38
+    },
+    {
+      "symbol": "YFIIUSDT",
+      "quote_volume_2020_12": 359576710.62523896,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 39
+    },
+    {
+      "symbol": "SKLUSDT",
+      "quote_volume_2020_12": 351229283.17793983,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 40
+    },
+    {
+      "symbol": "ATOMUSDT",
+      "quote_volume_2020_12": 337746787.093892,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 41
+    },
+    {
+      "symbol": "CHZUSDT",
+      "quote_volume_2020_12": 325773394.208934,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 42
+    },
+    {
+      "symbol": "OMGUSDT",
+      "quote_volume_2020_12": 318825979.59113604,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 43
+    },
+    {
+      "symbol": "INJUSDT",
+      "quote_volume_2020_12": 313839489.08091897,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 44
+    },
+    {
+      "symbol": "XTZUSDT",
+      "quote_volume_2020_12": 309194439.69793695,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 45
+    },
+    {
+      "symbol": "COMPUSDT",
+      "quote_volume_2020_12": 299394843.4031569,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 46
+    },
+    {
+      "symbol": "ALGOUSDT",
+      "quote_volume_2020_12": 291117987.0544581,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 47
+    },
+    {
+      "symbol": "BANDUSDT",
+      "quote_volume_2020_12": 290666826.25667304,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 48
+    },
+    {
+      "symbol": "XEMUSDT",
+      "quote_volume_2020_12": 287682910.75687903,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 49
+    },
+    {
+      "symbol": "TFUELUSDT",
+      "quote_volume_2020_12": 287048442.3717288,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 50
+    },
+    {
+      "symbol": "REEFUSDT",
+      "quote_volume_2020_12": 285370265.776607,
+      "days": 3,
+      "exclusion": null,
+      "rang_brut": 51
+    },
+    {
+      "symbol": "BTCDOWNUSDT",
+      "quote_volume_2020_12": 285002102.52148,
+      "days": 31,
+      "exclusion": "token_levier",
+      "rang_brut": 52
+    },
+    {
+      "symbol": "ROSEUSDT",
+      "quote_volume_2020_12": 284748122.19035304,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 53
+    },
+    {
+      "symbol": "BTCUPUSDT",
+      "quote_volume_2020_12": 274815318.55407006,
+      "days": 31,
+      "exclusion": "token_levier",
+      "rang_brut": 54
+    },
+    {
+      "symbol": "NEARUSDT",
+      "quote_volume_2020_12": 271700897.125167,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 55
+    },
+    {
+      "symbol": "PSGUSDT",
+      "quote_volume_2020_12": 252605212.31818897,
+      "days": 11,
+      "exclusion": null,
+      "rang_brut": 56
+    },
+    {
+      "symbol": "ETHUPUSDT",
+      "quote_volume_2020_12": 252127404.03902006,
+      "days": 31,
+      "exclusion": "token_levier",
+      "rang_brut": 57
+    },
+    {
+      "symbol": "LTCUPUSDT",
+      "quote_volume_2020_12": 251171040.47180006,
+      "days": 31,
+      "exclusion": "token_levier",
+      "rang_brut": 58
+    },
+    {
+      "symbol": "CVCUSDT",
+      "quote_volume_2020_12": 235694007.58798298,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 59
+    },
+    {
+      "symbol": "PAXUSDT",
+      "quote_volume_2020_12": 232322858.86978996,
+      "days": 31,
+      "exclusion": "stablecoin",
+      "rang_brut": 60
+    },
+    {
+      "symbol": "ONTUSDT",
+      "quote_volume_2020_12": 226840037.457345,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 61
+    },
+    {
+      "symbol": "TUSDUSDT",
+      "quote_volume_2020_12": 225296552.21786195,
+      "days": 31,
+      "exclusion": "stablecoin",
+      "rang_brut": 62
+    },
+    {
+      "symbol": "HARDUSDT",
+      "quote_volume_2020_12": 220055952.964955,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 63
+    },
+    {
+      "symbol": "DOGEUSDT",
+      "quote_volume_2020_12": 218074406.57204622,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 64
+    },
+    {
+      "symbol": "YFIDOWNUSDT",
+      "quote_volume_2020_12": 207353061.00498998,
+      "days": 31,
+      "exclusion": "token_levier",
+      "rang_brut": 65
+    },
+    {
+      "symbol": "KSMUSDT",
+      "quote_volume_2020_12": 193993061.89172798,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 66
+    },
+    {
+      "symbol": "NBSUSDT",
+      "quote_volume_2020_12": 186358881.873124,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 67
+    },
+    {
+      "symbol": "RSRUSDT",
+      "quote_volume_2020_12": 181675106.62882003,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 68
+    },
+    {
+      "symbol": "GBPUSDT",
+      "quote_volume_2020_12": 175590223.43527204,
+      "days": 31,
+      "exclusion": "fiat",
+      "rang_brut": 69
+    },
+    {
+      "symbol": "RENUSDT",
+      "quote_volume_2020_12": 168749463.49781802,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 70
+    },
+    {
+      "symbol": "RUNEUSDT",
+      "quote_volume_2020_12": 164785559.949172,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 71
+    },
+    {
+      "symbol": "LTCDOWNUSDT",
+      "quote_volume_2020_12": 163573054.12747,
+      "days": 31,
+      "exclusion": "token_levier",
+      "rang_brut": 72
+    },
+    {
+      "symbol": "ALPHAUSDT",
+      "quote_volume_2020_12": 161967527.158581,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 73
+    },
+    {
+      "symbol": "OCEANUSDT",
+      "quote_volume_2020_12": 154728193.625651,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 74
+    },
+    {
+      "symbol": "BNTUSDT",
+      "quote_volume_2020_12": 152743057.55331203,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 75
+    },
+    {
+      "symbol": "JUVUSDT",
+      "quote_volume_2020_12": 150068793.193005,
+      "days": 11,
+      "exclusion": null,
+      "rang_brut": 76
+    },
+    {
+      "symbol": "SXPUPUSDT",
+      "quote_volume_2020_12": 149519095.80315003,
+      "days": 31,
+      "exclusion": "token_levier",
+      "rang_brut": 77
+    },
+    {
+      "symbol": "BATUSDT",
+      "quote_volume_2020_12": 149345804.588642,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 78
+    },
+    {
+      "symbol": "QTUMUSDT",
+      "quote_volume_2020_12": 148914547.857054,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 79
+    },
+    {
+      "symbol": "AXSUSDT",
+      "quote_volume_2020_12": 145546867.44364196,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 80
+    },
+    {
+      "symbol": "IOSTUSDT",
+      "quote_volume_2020_12": 143965544.59159902,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 81
+    },
+    {
+      "symbol": "WINGUSDT",
+      "quote_volume_2020_12": 142971885.337158,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 82
+    },
+    {
+      "symbol": "LINKDOWNUSDT",
+      "quote_volume_2020_12": 142021117.91792503,
+      "days": 31,
+      "exclusion": "token_levier",
+      "rang_brut": 83
+    },
+    {
+      "symbol": "IOTAUSDT",
+      "quote_volume_2020_12": 141696445.093629,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 84
+    },
+    {
+      "symbol": "CTKUSDT",
+      "quote_volume_2020_12": 138244468.563575,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 85
+    },
+    {
+      "symbol": "YFIUPUSDT",
+      "quote_volume_2020_12": 136243202.93383,
+      "days": 31,
+      "exclusion": "token_levier",
+      "rang_brut": 86
+    },
+    {
+      "symbol": "LUNAUSDT",
+      "quote_volume_2020_12": 123365833.119719,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 87
+    },
+    {
+      "symbol": "BTTUSDT",
+      "quote_volume_2020_12": 120106575.2428544,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 88
+    },
+    {
+      "symbol": "COTIUSDT",
+      "quote_volume_2020_12": 118520267.31245798,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 89
+    },
+    {
+      "symbol": "BELUSDT",
+      "quote_volume_2020_12": 118501997.131503,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 90
+    },
+    {
+      "symbol": "SRMUSDT",
+      "quote_volume_2020_12": 117938251.91505502,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 91
+    },
+    {
+      "symbol": "DOTUPUSDT",
+      "quote_volume_2020_12": 110190478.78713,
+      "days": 31,
+      "exclusion": "token_levier",
+      "rang_brut": 92
+    },
+    {
+      "symbol": "ETHDOWNUSDT",
+      "quote_volume_2020_12": 109446163.94137,
+      "days": 31,
+      "exclusion": "token_levier",
+      "rang_brut": 93
+    },
+    {
+      "symbol": "ANKRUSDT",
+      "quote_volume_2020_12": 109000962.71302901,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 94
+    },
+    {
+      "symbol": "ICXUSDT",
+      "quote_volume_2020_12": 108800062.83251199,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 95
+    },
+    {
+      "symbol": "LINKUPUSDT",
+      "quote_volume_2020_12": 107933071.31939998,
+      "days": 31,
+      "exclusion": "token_levier",
+      "rang_brut": 96
+    },
+    {
+      "symbol": "TRBUSDT",
+      "quote_volume_2020_12": 106089467.97240397,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 97
+    },
+    {
+      "symbol": "SOLUSDT",
+      "quote_volume_2020_12": 101635596.826519,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 98
+    },
+    {
+      "symbol": "ZENUSDT",
+      "quote_volume_2020_12": 100268136.21210101,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 99
+    },
+    {
+      "symbol": "XVSUSDT",
+      "quote_volume_2020_12": 97148118.34132999,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 100
+    },
+    {
+      "symbol": "MATICUSDT",
+      "quote_volume_2020_12": 95171834.645171,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 101
+    },
+    {
+      "symbol": "MITHUSDT",
+      "quote_volume_2020_12": 88424152.254646,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 102
+    },
+    {
+      "symbol": "STXUSDT",
+      "quote_volume_2020_12": 83630768.722616,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 103
+    },
+    {
+      "symbol": "ARPAUSDT",
+      "quote_volume_2020_12": 82100185.891353,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 104
+    },
+    {
+      "symbol": "BZRXUSDT",
+      "quote_volume_2020_12": 82100134.961676,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 105
+    },
+    {
+      "symbol": "OXTUSDT",
+      "quote_volume_2020_12": 79047721.98996602,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 106
+    },
+    {
+      "symbol": "KAVAUSDT",
+      "quote_volume_2020_12": 76244592.514283,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 107
+    },
+    {
+      "symbol": "ZRXUSDT",
+      "quote_volume_2020_12": 75519688.64301299,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 108
+    },
+    {
+      "symbol": "DIAUSDT",
+      "quote_volume_2020_12": 74293596.11365798,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 109
+    },
+    {
+      "symbol": "SXPDOWNUSDT",
+      "quote_volume_2020_12": 73313444.42571999,
+      "days": 31,
+      "exclusion": "token_levier",
+      "rang_brut": 110
+    },
+    {
+      "symbol": "AVAXUSDT",
+      "quote_volume_2020_12": 71596127.39519101,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 111
+    },
+    {
+      "symbol": "UMAUSDT",
+      "quote_volume_2020_12": 70510866.660064,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 112
+    },
+    {
+      "symbol": "TOMOUSDT",
+      "quote_volume_2020_12": 70121380.23079298,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 113
+    },
+    {
+      "symbol": "FLMUSDT",
+      "quote_volume_2020_12": 69942650.85680899,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 114
+    },
+    {
+      "symbol": "JSTUSDT",
+      "quote_volume_2020_12": 68266592.163461,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 115
+    },
+    {
+      "symbol": "AUDIOUSDT",
+      "quote_volume_2020_12": 67542912.04513098,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 116
+    },
+    {
+      "symbol": "GTOUSDT",
+      "quote_volume_2020_12": 65778040.724801,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 117
+    },
+    {
+      "symbol": "ENJUSDT",
+      "quote_volume_2020_12": 64861303.49300699,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 118
+    },
+    {
+      "symbol": "SANDUSDT",
+      "quote_volume_2020_12": 64649389.173404,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 119
+    },
+    {
+      "symbol": "MKRUSDT",
+      "quote_volume_2020_12": 64338133.19902739,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 120
+    },
+    {
+      "symbol": "LRCUSDT",
+      "quote_volume_2020_12": 62988205.22198201,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 121
+    },
+    {
+      "symbol": "FTMUSDT",
+      "quote_volume_2020_12": 62127777.08002699,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 122
+    },
+    {
+      "symbol": "DNTUSDT",
+      "quote_volume_2020_12": 57227408.137260005,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 123
+    },
+    {
+      "symbol": "REPUSDT",
+      "quote_volume_2020_12": 56935190.289452,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 124
+    },
+    {
+      "symbol": "KNCUSDT",
+      "quote_volume_2020_12": 55040827.28628901,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 125
+    },
+    {
+      "symbol": "DOTDOWNUSDT",
+      "quote_volume_2020_12": 54784764.83178,
+      "days": 31,
+      "exclusion": "token_levier",
+      "rang_brut": 126
+    },
+    {
+      "symbol": "BALUSDT",
+      "quote_volume_2020_12": 54776658.767493,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 127
+    },
+    {
+      "symbol": "ADAUPUSDT",
+      "quote_volume_2020_12": 54772081.89572,
+      "days": 31,
+      "exclusion": "token_levier",
+      "rang_brut": 128
+    },
+    {
+      "symbol": "DGBUSDT",
+      "quote_volume_2020_12": 53006191.206530996,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 129
+    },
+    {
+      "symbol": "ORNUSDT",
+      "quote_volume_2020_12": 52992960.75947301,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 130
+    },
+    {
+      "symbol": "DUSKUSDT",
+      "quote_volume_2020_12": 47680870.11950399,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 131
+    },
+    {
+      "symbol": "UNIUPUSDT",
+      "quote_volume_2020_12": 46284551.000250004,
+      "days": 31,
+      "exclusion": "token_levier",
+      "rang_brut": 132
+    },
+    {
+      "symbol": "LTOUSDT",
+      "quote_volume_2020_12": 46063869.452888004,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 133
+    },
+    {
+      "symbol": "AAVEUPUSDT",
+      "quote_volume_2020_12": 45209760.43252001,
+      "days": 31,
+      "exclusion": "token_levier",
+      "rang_brut": 134
+    },
+    {
+      "symbol": "MANAUSDT",
+      "quote_volume_2020_12": 44531125.90508301,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 135
+    },
+    {
+      "symbol": "ONEUSDT",
+      "quote_volume_2020_12": 44000704.129749,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 136
+    },
+    {
+      "symbol": "AAVEDOWNUSDT",
+      "quote_volume_2020_12": 43725508.97801001,
+      "days": 31,
+      "exclusion": "token_levier",
+      "rang_brut": 137
+    },
+    {
+      "symbol": "HBARUSDT",
+      "quote_volume_2020_12": 43634682.353961006,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 138
+    },
+    {
+      "symbol": "FETUSDT",
+      "quote_volume_2020_12": 43346657.294890985,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 139
+    },
+    {
+      "symbol": "ADADOWNUSDT",
+      "quote_volume_2020_12": 42927669.608550005,
+      "days": 31,
+      "exclusion": "token_levier",
+      "rang_brut": 140
+    },
+    {
+      "symbol": "WNXMUSDT",
+      "quote_volume_2020_12": 42467249.291188,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 141
+    },
+    {
+      "symbol": "AKROUSDT",
+      "quote_volume_2020_12": 39417741.614314996,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 142
+    },
+    {
+      "symbol": "DCRUSDT",
+      "quote_volume_2020_12": 38717293.02307699,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 143
+    },
+    {
+      "symbol": "FIOUSDT",
+      "quote_volume_2020_12": 36693059.99367999,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 144
+    },
+    {
+      "symbol": "PERLUSDT",
+      "quote_volume_2020_12": 35925875.643693,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 145
+    },
+    {
+      "symbol": "TCTUSDT",
+      "quote_volume_2020_12": 35106819.300919,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 146
+    },
+    {
+      "symbol": "FTTUSDT",
+      "quote_volume_2020_12": 33769271.752512,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 147
+    },
+    {
+      "symbol": "STORJUSDT",
+      "quote_volume_2020_12": 32889564.615399,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 148
+    },
+    {
+      "symbol": "DOCKUSDT",
+      "quote_volume_2020_12": 32723705.994676996,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 149
+    },
+    {
+      "symbol": "EOSUPUSDT",
+      "quote_volume_2020_12": 32372859.28784,
+      "days": 31,
+      "exclusion": "token_levier",
+      "rang_brut": 150
+    },
+    {
+      "symbol": "XTZUPUSDT",
+      "quote_volume_2020_12": 32208864.02707,
+      "days": 31,
+      "exclusion": "token_levier",
+      "rang_brut": 151
+    },
+    {
+      "symbol": "STMXUSDT",
+      "quote_volume_2020_12": 31571852.977392998,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 152
+    },
+    {
+      "symbol": "RLCUSDT",
+      "quote_volume_2020_12": 31069062.952286,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 153
+    },
+    {
+      "symbol": "AUDUSDT",
+      "quote_volume_2020_12": 31027537.241264,
+      "days": 31,
+      "exclusion": "fiat",
+      "rang_brut": 154
+    },
+    {
+      "symbol": "DATAUSDT",
+      "quote_volume_2020_12": 29867445.136505,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 155
+    },
+    {
+      "symbol": "CTSIUSDT",
+      "quote_volume_2020_12": 28952234.843315005,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 156
+    },
+    {
+      "symbol": "HOTUSDT",
+      "quote_volume_2020_12": 28454552.687182095,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 157
+    },
+    {
+      "symbol": "BNBUPUSDT",
+      "quote_volume_2020_12": 28298540.254459996,
+      "days": 31,
+      "exclusion": "token_levier",
+      "rang_brut": 158
+    },
+    {
+      "symbol": "NMRUSDT",
+      "quote_volume_2020_12": 28193379.229695,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 159
+    },
+    {
+      "symbol": "RVNUSDT",
+      "quote_volume_2020_12": 27735851.918794997,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 160
+    },
+    {
+      "symbol": "ONGUSDT",
+      "quote_volume_2020_12": 27574212.017033994,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 161
+    },
+    {
+      "symbol": "BLZUSDT",
+      "quote_volume_2020_12": 27085814.283057,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 162
+    },
+    {
+      "symbol": "SUSHIDOWNUSDT",
+      "quote_volume_2020_12": 26927202.093840003,
+      "days": 22,
+      "exclusion": "token_levier",
+      "rang_brut": 163
+    },
+    {
+      "symbol": "UTKUSDT",
+      "quote_volume_2020_12": 26918712.982129995,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 164
+    },
+    {
+      "symbol": "BEAMUSDT",
+      "quote_volume_2020_12": 26582989.907188002,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 165
+    },
+    {
+      "symbol": "SUSHIUPUSDT",
+      "quote_volume_2020_12": 26323775.326310005,
+      "days": 22,
+      "exclusion": "token_levier",
+      "rang_brut": 166
+    },
+    {
+      "symbol": "WANUSDT",
+      "quote_volume_2020_12": 26125031.525593005,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 167
+    },
+    {
+      "symbol": "MTLUSDT",
+      "quote_volume_2020_12": 25762250.055880006,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 168
+    },
+    {
+      "symbol": "MBLUSDT",
+      "quote_volume_2020_12": 25219234.378551,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 169
+    },
+    {
+      "symbol": "OGNUSDT",
+      "quote_volume_2020_12": 25040301.608207,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 170
+    },
+    {
+      "symbol": "MFTUSDT",
+      "quote_volume_2020_12": 23482669.877451003,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 171
+    },
+    {
+      "symbol": "WINUSDT",
+      "quote_volume_2020_12": 23477131.24772864,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 172
+    },
+    {
+      "symbol": "NANOUSDT",
+      "quote_volume_2020_12": 23345098.914369002,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 173
+    },
+    {
+      "symbol": "PNTUSDT",
+      "quote_volume_2020_12": 22888781.586548,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 174
+    },
+    {
+      "symbol": "HNTUSDT",
+      "quote_volume_2020_12": 22695121.523536995,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 175
+    },
+    {
+      "symbol": "UNIDOWNUSDT",
+      "quote_volume_2020_12": 22618875.219729997,
+      "days": 31,
+      "exclusion": "token_levier",
+      "rang_brut": 176
+    },
+    {
+      "symbol": "ANTUSDT",
+      "quote_volume_2020_12": 21498025.925496,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 177
+    },
+    {
+      "symbol": "PAXGUSDT",
+      "quote_volume_2020_12": 21410289.917381685,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 178
+    },
+    {
+      "symbol": "ATMUSDT",
+      "quote_volume_2020_12": 21249622.955155,
+      "days": 2,
+      "exclusion": null,
+      "rang_brut": 179
+    },
+    {
+      "symbol": "TRXUPUSDT",
+      "quote_volume_2020_12": 20228526.435260005,
+      "days": 31,
+      "exclusion": "token_levier",
+      "rang_brut": 180
+    },
+    {
+      "symbol": "SCUSDT",
+      "quote_volume_2020_12": 19775622.152729,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 181
+    },
+    {
+      "symbol": "OGUSDT",
+      "quote_volume_2020_12": 19477526.571144,
+      "days": 2,
+      "exclusion": null,
+      "rang_brut": 182
+    },
+    {
+      "symbol": "SUNUSDT",
+      "quote_volume_2020_12": 19423346.974118,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 183
+    },
+    {
+      "symbol": "BNBDOWNUSDT",
+      "quote_volume_2020_12": 18888819.19906,
+      "days": 31,
+      "exclusion": "token_levier",
+      "rang_brut": 184
+    },
+    {
+      "symbol": "CHRUSDT",
+      "quote_volume_2020_12": 18434045.811369,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 185
+    },
+    {
+      "symbol": "IRISUSDT",
+      "quote_volume_2020_12": 17947752.262591,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 186
+    },
+    {
+      "symbol": "BTSUSDT",
+      "quote_volume_2020_12": 17105865.547184996,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 187
+    },
+    {
+      "symbol": "AIONUSDT",
+      "quote_volume_2020_12": 16794652.675995,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 188
+    },
+    {
+      "symbol": "CELRUSDT",
+      "quote_volume_2020_12": 16218245.236739999,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 189
+    },
+    {
+      "symbol": "XZCUSDT",
+      "quote_volume_2020_12": 16125760.900960002,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 190
+    },
+    {
+      "symbol": "DREPUSDT",
+      "quote_volume_2020_12": 15667830.779629001,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 191
+    },
+    {
+      "symbol": "XLMUPUSDT",
+      "quote_volume_2020_12": 14907345.01213,
+      "days": 21,
+      "exclusion": "token_levier",
+      "rang_brut": 192
+    },
+    {
+      "symbol": "STRAXUSDT",
+      "quote_volume_2020_12": 14644945.509690998,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 193
+    },
+    {
+      "symbol": "NULSUSDT",
+      "quote_volume_2020_12": 14021030.764579996,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 194
+    },
+    {
+      "symbol": "ASRUSDT",
+      "quote_volume_2020_12": 13707633.509679,
+      "days": 2,
+      "exclusion": null,
+      "rang_brut": 195
+    },
+    {
+      "symbol": "FILUPUSDT",
+      "quote_volume_2020_12": 13336485.33377,
+      "days": 31,
+      "exclusion": "token_levier",
+      "rang_brut": 196
+    },
+    {
+      "symbol": "KEYUSDT",
+      "quote_volume_2020_12": 13077272.159538,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 197
+    },
+    {
+      "symbol": "LSKUSDT",
+      "quote_volume_2020_12": 11920224.840715999,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 198
+    },
+    {
+      "symbol": "IOTXUSDT",
+      "quote_volume_2020_12": 11840174.883709995,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 199
+    },
+    {
+      "symbol": "MDTUSDT",
+      "quote_volume_2020_12": 11828554.458022,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 200
+    },
+    {
+      "symbol": "VTHOUSDT",
+      "quote_volume_2020_12": 11713079.942932002,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 201
+    },
+    {
+      "symbol": "WRXUSDT",
+      "quote_volume_2020_12": 11522158.394434001,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 202
+    },
+    {
+      "symbol": "COSUSDT",
+      "quote_volume_2020_12": 11286555.327196,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 203
+    },
+    {
+      "symbol": "EOSDOWNUSDT",
+      "quote_volume_2020_12": 10486926.588149998,
+      "days": 31,
+      "exclusion": "token_levier",
+      "rang_brut": 204
+    },
+    {
+      "symbol": "FUNUSDT",
+      "quote_volume_2020_12": 10272123.851435998,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 205
+    },
+    {
+      "symbol": "WTCUSDT",
+      "quote_volume_2020_12": 9964401.561986,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 206
+    },
+    {
+      "symbol": "TROYUSDT",
+      "quote_volume_2020_12": 9406598.227427997,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 207
+    },
+    {
+      "symbol": "STPTUSDT",
+      "quote_volume_2020_12": 8601910.352498999,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 208
+    },
+    {
+      "symbol": "ARDRUSDT",
+      "quote_volume_2020_12": 8395170.489803,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 209
+    },
+    {
+      "symbol": "COCOSUSDT",
+      "quote_volume_2020_12": 7980075.0453119995,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 210
+    },
+    {
+      "symbol": "VITEUSDT",
+      "quote_volume_2020_12": 7853729.117045001,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 211
+    },
+    {
+      "symbol": "NPXSUSDT",
+      "quote_volume_2020_12": 7772505.744091501,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 212
+    },
+    {
+      "symbol": "KMDUSDT",
+      "quote_volume_2020_12": 7705908.338149999,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 213
+    },
+    {
+      "symbol": "HIVEUSDT",
+      "quote_volume_2020_12": 7589652.627447,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 214
+    },
+    {
+      "symbol": "XLMDOWNUSDT",
+      "quote_volume_2020_12": 7477253.2301199995,
+      "days": 21,
+      "exclusion": "token_levier",
+      "rang_brut": 215
+    },
+    {
+      "symbol": "DENTUSDT",
+      "quote_volume_2020_12": 6982802.0031832,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 216
+    },
+    {
+      "symbol": "FILDOWNUSDT",
+      "quote_volume_2020_12": 6835221.290449999,
+      "days": 31,
+      "exclusion": "token_levier",
+      "rang_brut": 217
+    },
+    {
+      "symbol": "NKNUSDT",
+      "quote_volume_2020_12": 6828547.8739720015,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 218
+    },
+    {
+      "symbol": "TRXDOWNUSDT",
+      "quote_volume_2020_12": 6444322.023770001,
+      "days": 31,
+      "exclusion": "token_levier",
+      "rang_brut": 219
+    },
+    {
+      "symbol": "CTXCUSDT",
+      "quote_volume_2020_12": 5983314.016782998,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 220
+    },
+    {
+      "symbol": "AVAUSDT",
+      "quote_volume_2020_12": 5590164.889962002,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 221
+    },
+    {
+      "symbol": "GXSUSDT",
+      "quote_volume_2020_12": 4834198.8629250005,
+      "days": 31,
+      "exclusion": null,
+      "rang_brut": 222
+    },
+    {
+      "symbol": "SUSDUSDT",
+      "quote_volume_2020_12": 4256774.401249,
+      "days": 28,
+      "exclusion": "stablecoin",
+      "rang_brut": 223
+    },
+    {
+      "symbol": "XTZDOWNUSDT",
+      "quote_volume_2020_12": 4160569.30439,
+      "days": 31,
+      "exclusion": "token_levier",
+      "rang_brut": 224
+    }
+  ]
+}

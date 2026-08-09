@@ -1,0 +1,130 @@
+{
+  "critère": "top 10 volume quote USDT cumulé, klines 1d de 2020-12, source data.binance.vision (inclut délistées)",
+  "date_gel": "2021-01-01",
+  "exclusions_appliquées": {
+    "stablecoins": [
+      "AEUR",
+      "BUSD",
+      "DAI",
+      "EURS",
+      "FDUSD",
+      "GUSD",
+      "PAX",
+      "SUSD",
+      "TUSD",
+      "USDC",
+      "USDE",
+      "USDP",
+      "USDS",
+      "USDSB",
+      "UST",
+      "USTC"
+    ],
+    "fiat": [
+      "AUD",
+      "BIDR",
+      "BKRW",
+      "BRL",
+      "BVND",
+      "DAI",
+      "EUR",
+      "GBP",
+      "IDRT",
+      "NGN",
+      "RUB",
+      "TRY",
+      "UAH",
+      "ZAR"
+    ],
+    "tokens_levier_suffixes": [
+      "UP",
+      "DOWN",
+      "BULL",
+      "BEAR"
+    ]
+  },
+  "top10": [
+    {
+      "pair": "BTC/USDT",
+      "symbol": "BTCUSDT",
+      "quote_volume_2020_12": 55748654003.59773,
+      "rang_brut": 1
+    },
+    {
+      "pair": "ETH/USDT",
+      "symbol": "ETHUSDT",
+      "quote_volume_2020_12": 19119402122.69965,
+      "rang_brut": 2
+    },
+    {
+      "pair": "XRP/USDT",
+      "symbol": "XRPUSDT",
+      "quote_volume_2020_12": 16214213587.29052,
+      "rang_brut": 3
+    },
+    {
+      "pair": "LTC/USDT",
+      "symbol": "LTCUSDT",
+      "quote_volume_2020_12": 6957456546.267642,
+      "rang_brut": 4
+    },
+    {
+      "pair": "GRT/USDT",
+      "symbol": "GRTUSDT",
+      "quote_volume_2020_12": 4785323630.282073,
+      "rang_brut": 6
+    },
+    {
+      "pair": "BCH/USDT",
+      "symbol": "BCHUSDT",
+      "quote_volume_2020_12": 3013388964.0919003,
+      "rang_brut": 7
+    },
+    {
+      "pair": "LINK/USDT",
+      "symbol": "LINKUSDT",
+      "quote_volume_2020_12": 2793631117.2634826,
+      "rang_brut": 8
+    },
+    {
+      "pair": "BNB/USDT",
+      "symbol": "BNBUSDT",
+      "quote_volume_2020_12": 2652009559.39018,
+      "rang_brut": 9
+    },
+    {
+      "pair": "ADA/USDT",
+      "symbol": "ADAUSDT",
+      "quote_volume_2020_12": 2580882228.387686,
+      "rang_brut": 10
+    },
+    {
+      "pair": "XLM/USDT",
+      "symbol": "XLMUSDT",
+      "quote_volume_2020_12": 1846158265.8724213,
+      "rang_brut": 11
+    }
+  ],
+  "exclus_du_top_brut": [
+    {
+      "symbol": "BUSDUSDT",
+      "raison": "stablecoin",
+      "rang_brut": 5
+    },
+    {
+      "symbol": "USDCUSDT",
+      "raison": "stablecoin",
+      "rang_brut": 14
+    },
+    {
+      "symbol": "XRPDOWNUSDT",
+      "raison": "token_levier",
+      "rang_brut": 18
+    },
+    {
+      "symbol": "XRPUPUSDT",
+      "raison": "token_levier",
+      "rang_brut": 20
+    }
+  ]
+}
