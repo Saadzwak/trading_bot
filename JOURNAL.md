@@ -64,3 +64,17 @@ y compris les erreurs.
 ## 2026-08-10 01:38 — Phase 2.4 : GEL DU BUDGET D'ESSAIS
 - N = 7 (A:3, B:2, C:2). N est le dénominateur du Deflated Sharpe. Il ne peut plus
   augmenter. Commit de gel : hash consigné dans l'entrée suivante et STATE.json.
+
+## 2026-08-10 01:41 — Hash du commit de gel (preuve d'antériorité du pré-enregistrement)
+- **edbb4397a790702046dad47dd1bc034e379e25fc**
+- Contenu : HYPOTHESES.md (N=7), univers figé (data/universe/), critères de succès,
+  coûts. Ce commit précède tout backtest — vérifiable par l'historique git.
+- Environnement d'exécution : freqtrade 2026.7, ccxt 4.5.71, venv Python 3.12 natif.
+
+## 2026-08-10 01:42 — Lancement du téléchargement des données
+- Source : data.binance.vision (cohérente avec le calcul d'univers, inclut les gaps réels).
+- Période : 2020-09-01 → 2024-12-31 UNIQUEMENT (garde anti-scellé codée en dur dans le
+  script : tout mois ≥ 2025-01 lève une exception).
+- Timeframes : 1h (signal) + 5m (--timeframe-detail). Format : feather freqtrade.
+- La couverture réelle par paire (premières/dernières bougies, trous) sera écrite dans
+  data/universe/data_gaps.json et reprise dans les limites du rapport.

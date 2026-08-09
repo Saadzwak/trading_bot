@@ -1,10 +1,10 @@
 {
   "phase": 2,
-  "sous_étape": "2.4 gel du budget — commit en cours",
+  "sous_étape": "2.4 terminé — gel committé ; préparation données Phase 3",
   "essais_consommés": 0,
   "essais_budget": 7,
   "jeu_scellé_ouvert": false,
-  "hash_commit_gel": null,
-  "dernière_action": "2026-08-10 01:38 — univers figé (BTC,ETH,XRP,LTC,GRT,BCH,LINK,BNB,ADA,XLM), HYPOTHESES.md rédigé, N=7 gelé",
-  "prochaine_action": "commit de gel + consignation du hash ; puis téléchargement données 2020-09→2024-12 (1h+5m) et implémentation des 7 stratégies"
+  "hash_commit_gel": "edbb4397a790702046dad47dd1bc034e379e25fc",
+  "dernière_action": "2026-08-10 01:41 — commit de gel edbb439 ; freqtrade 2026.7 installé",
+  "prochaine_action": "téléchargement données 2020-09→2024-12 (en cours, arrière-plan) ; intégrer analyses agents ; implémenter les 7 stratégies ; config freqtrade ; puis Phase 3 backtests dans l'ordre A1→C2"
 }
