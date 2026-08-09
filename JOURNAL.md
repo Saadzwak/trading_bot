@@ -141,3 +141,30 @@ y compris les erreurs.
   C'est précisément le rôle du passage lookahead-analysis avant la Phase 3.
 - Re-vérification lookahead-analysis sur B1/B2 lancée ; les essais ne partiront
   qu'après verdict « No ».
+
+## 2026-08-10 02:15 — Résolution de l'incident B1/B2 : faux positif structurel démontré
+- La re-vérification post-correctif donnait le MÊME verdict « Yes » — ma théorie des
+  trous d'index était insuffisante. Investigation du code de l'analyseur :
+  **reference/freqtrade/freqtrade/optimize/analysis/lookahead.py:116 et :150 — les
+  contre-backtests sont relancés avec une whitelist réduite à LA SEULE paire du trade.**
+  Pour une stratégie cross-sectionnelle, le panneau du contre-run ne contient qu'une
+  paire → xs_rank ≡ 1.0 → divergence « 2.0 != 1.0 » mécanique. L'outil ne peut pas
+  vérifier une stratégie multi-paires ; verdict invalide par construction.
+- Vérification de REMPLACEMENT (scripts/verify_xs_reproducibility.py, logique
+  répliquée à l'identique) :
+  - Test 1, invariance à la fenêtre de chargement : OK (551 timestamps pour 21j,
+    887 pour 7j, égalité exacte rangs + rendements).
+  - Test 2, causalité stricte : troncature de TOUTE donnée postérieure à t → rangs
+    à t inchangés, sur 11 rebalancements × 2 lookbacks. OK.
+- Le correctif grille horaire + ffill(limit=6) est CONSERVÉ (il rend la mesure du
+  lookback exactement temporelle à travers les maintenances — plus fidèle à la règle
+  enregistrée « rendement 21 jours »).
+- Incident clos. La limitation de lookahead-analysis pour les stratégies cross-
+  sectionnelles sera reportée en « Limites et biais résiduels » du rapport final.
+
+## 2026-08-10 02:16 — LANCEMENT DE LA PHASE 3 : consommation du budget d'essais
+- scripts/run_trials.py lancé en arrière-plan : 7 candidates dans l'ordre du registre
+  (A1→A2→A3→B1→B2→C1→C2), calibration 2021-2023 puis validation 2024, une passe
+  chacune, fee 0,0015/côté, --timeframe-detail 5m, exports + logs par essai.
+- Les résultats ne seront pas consultés avant la fin du 7e essai (métriques agrégées).
+- Garde anti-scellé active (aucune donnée 2025+ sur disque + assertion dans le runner).

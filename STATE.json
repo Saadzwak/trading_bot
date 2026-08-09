@@ -1,10 +1,10 @@
 {
   "phase": 3,
-  "sous_étape": "3.0 préparation — smoke test en cours, analyses de biais à suivre",
+  "sous_étape": "3.1 essais en cours (ordre A1→C2, runner autonome)",
   "essais_consommés": 0,
   "essais_budget": 7,
   "jeu_scellé_ouvert": false,
   "hash_commit_gel": "edbb4397a790702046dad47dd1bc034e379e25fc",
-  "dernière_action": "2026-08-10 01:50 — stratégies implémentées (7/7 OK, 0 hyperopt), runner écrit, smoke test Dec-2020 lancé",
-  "prochaine_action": "à la fin du smoke test : lookahead-analysis + recursive-analysis ; puis scripts/run_trials.py (7 essais, ordre du registre) ; métriques + DSR après le 7e essai"
+  "dernière_action": "2026-08-10 02:16 — vérifications anti-biais closes (A/C : no bias ; B : faux positif structurel démontré + test causalité dédié OK) ; run_trials.py lancé",
+  "prochaine_action": "attendre la fin des 7 essais (le runner incrémente le compteur et journalise) ; puis compute_metrics.py ; puis Phase 4 walk-forward sur la meilleure candidate en validation"
 }
