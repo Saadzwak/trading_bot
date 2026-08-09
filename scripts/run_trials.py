@@ -74,8 +74,9 @@ def state_update(**kwargs):
     return state
 
 
-def result_file(trial_id: str, phase: str) -> Path:
-    return RESULTS / f"{trial_id}_{phase}.zip"
+def result_done(trial_id: str, phase: str) -> bool:
+    """Tolérant au format d'export (.zip ou .json selon la version freqtrade)."""
+    return any(RESULTS.glob(f"{trial_id}_{phase}*"))
 
 
 def run_backtest(trial_id, strategy, mot, stake, phase):
@@ -108,8 +109,8 @@ def main():
     check_seal()
 
     for trial_id, strategy, mot, stake in ORDER:
-        done_c = result_file(trial_id, "calib").exists()
-        done_v = result_file(trial_id, "valid").exists()
+        done_c = result_done(trial_id, "calib")
+        done_v = result_done(trial_id, "valid")
         if done_c and done_v:
             print(f"{trial_id}: déjà exécutée, sautée (reprise).", flush=True)
             continue
