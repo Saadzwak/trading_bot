@@ -34,7 +34,8 @@ class B1XsMomentum21d(IStrategy):
     LOOKBACK_DAYS = 21
     TOP_N = 3
 
-    startup_candle_count = 21 * 24 + 1
+    # +25 : marge d'une journée au-delà du lookback pour les bords de fenêtre.
+    startup_candle_count = 21 * 24 + 25
 
     def populate_indicators(self, dataframe: DataFrame, metadata: dict) -> DataFrame:
         lb = self.LOOKBACK_DAYS * 24
@@ -44,6 +45,16 @@ class B1XsMomentum21d(IStrategy):
             if pdf is not None and not pdf.empty:
                 closes[p] = pdf.set_index("date")["close"]
         panel = pd.DataFrame(closes)
+        # Grille horaire COMPLÈTE : le décalage positionnel redevient un décalage
+        # temporel exact malgré les trous de maintenance Binance (1-4 bougies).
+        # Sans cela, le nombre de trous dépend de la fenêtre chargée et les rangs
+        # deviennent non reproductibles — biais détecté par lookahead-analysis le
+        # 2026-08-10 (voir JOURNAL.md). ffill(limit=6) ne comble que les
+        # maintenances courtes ; les NaN de tête (paire pas encore listée, ex. GRT)
+        # sont préservés et excluent la paire du classement.
+        grid = pd.date_range(panel.index.min(), panel.index.max(),
+                             freq="1h", tz="UTC")
+        panel = panel.reindex(grid).ffill(limit=6)
         # Rendement lookback : n'utilise que des closes <= t (aucun look-ahead).
         rets = panel / panel.shift(lb) - 1
         ranks = rets.rank(axis=1, ascending=False, method="min")

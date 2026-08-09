@@ -121,3 +121,23 @@ y compris les erreurs.
   les 7 stratégies s'exécutent (signaux, callbacks, exports) sans erreur.
 - Ses chiffres ne constituent PAS un essai, ne seront pas utilisés pour la sélection et
   ne seront pas rapportés comme des résultats.
+
+## 2026-08-10 02:05 — INCIDENT : biais de reproductibilité détecté sur B1/B2 (avant tout essai)
+- Verdicts des analyses : A1, A2, A3, C1, C2 → « no bias detected ». B1 et B2 →
+  « has_bias: Yes », colonne xs_rank (9-11 signaux divergents selon la fenêtre).
+- recursive-analysis : xs_rank STABLE à fenêtre de chargement égale (aucune variance à
+  startup ≥ 505) → pas un problème de récursion ni de startup insuffisant.
+- **Cause racine** : panneau cross-sectionnel construit sur l'union des index des 10
+  paires puis `shift(504)` POSITIONNEL. L'historique contient des trous de maintenance
+  Binance (1-4 bougies, cf. data_gaps.json) : sur un index troué, 504 lignes ≠ 504
+  heures, et le nombre de trous inclus dépend du début de la fenêtre chargée → les
+  rendements 21j/7j mesurés variaient selon la fenêtre → rangs non reproductibles.
+- **Correctif** (les RÈGLES enregistrées sont inchangées — « rendement 21 jours » est
+  temporel par définition ; c'est l'implémentation qui mesurait autre chose) :
+  reindexation du panneau sur une grille horaire complète + ffill(limit=6) — comble
+  uniquement les maintenances courtes, préserve les NaN de tête (GRT avant listing) ;
+  startup porté à lookback+25 (marge de bord de fenêtre).
+- Conformité protocole : AUCUN essai consommé, aucun résultat de performance consulté.
+  C'est précisément le rôle du passage lookahead-analysis avant la Phase 3.
+- Re-vérification lookahead-analysis sur B1/B2 lancée ; les essais ne partiront
+  qu'après verdict « No ».
