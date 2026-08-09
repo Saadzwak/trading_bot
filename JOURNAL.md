@@ -78,3 +78,46 @@ y compris les erreurs.
 - Timeframes : 1h (signal) + 5m (--timeframe-detail). Format : feather freqtrade.
 - La couverture réelle par paire (premières/dernières bougies, trous) sera écrite dans
   data/universe/data_gaps.json et reprise dans les limites du rapport.
+
+## 2026-08-10 01:45 — Phase 2.1 terminée : les 3 analyses de référence sont livrées
+- reference/HYPOTHESES_MOTEUR.md : ~15 simplifications du moteur avec fichier:ligne.
+  Conclusions structurantes : (1) liquidité infinie (volume jamais consulté) = biais
+  n°1 en notre faveur ; (2) stoploss rempli exactement au prix du stop = sous-estime la
+  queue gauche ; (3) AUCUN modèle de slippage natif — le seul mécanisme propre est de
+  gonfler `fee` → **CONFIRME le choix pré-enregistré fee=0,0015/côté, aucun changement
+  du modèle de coûts** ; (4) le moteur ne protège pas contre le look-ahead introduit
+  dans populate_indicators → lookahead-analysis et recursive-analysis à passer.
+- reference/SIGNATURES_OVERFIT.md : 14 signatures illustrées sur le dépôt communautaire
+  (85 indicateurs/stratégie, ROI-paliers = histogramme des durées passées, stops à 5
+  décimales, look-ahead avoué en commentaire…). Checklist de rejet en 12 points adoptée
+  pour nos candidates.
+- reference/COMPARAISON_NAUTILUS.md : écarts sévérisés pour notre config ; conditions
+  d'honnêteté listées. Recommandation de stress-test de frais (+5/10/20 bps/côté) :
+  **décision** — pour ne pas multiplier les essais, le stress de frais sera appliqué
+  UNIQUEMENT à la candidate finale en Phase 4, comme test de robustesse, jamais comme
+  critère de sélection entre candidates. (Sinon chaque niveau de fee ferait ×3 sur N.)
+
+## 2026-08-10 01:46 — Données prêtes
+- Couverture 2020-09-01 → 2024-12-31 complète pour 9 paires ; GRT démarre à son listing
+  (2020-12-17) — réalité de marché, pas un trou de données. Trous résiduels de 1 à 4
+  bougies (maintenances Binance) conservés tels quels. Détail : data/universe/data_gaps.json.
+- Le scellé 2025+ n'existe pas sur le disque (garde codée en dur dans download_data.py).
+
+## 2026-08-10 01:48 — 7 stratégies implémentées et validées au chargement
+- `freqtrade list-strategies` : 7/7 OK, **0 paramètre hyperoptable** (conforme).
+- Résolutions d'ambiguïté fixées AVANT tout backtest (documentées dans les docstrings) :
+  - C1/C2 : ATR%(24) mesuré sur la fenêtre se terminant à N−1 (le choc est comparé à la
+    volatilité pré-choc) ; volume quote approximé par volume_base × close.
+  - A3 : vol quotidienne décalée d'un jour (anti-look-ahead) ; σ indisponible → facteur 1.
+  - B1/B2 : signal évalué sur la bougie dim. 23:00 UTC (clôture lun. 00:00), exécution à
+    l'open lun. 00:00 ; mise 3333 USDT (1/3 du capital initial).
+  - Config : entry/exit_pricing.price_side="other" (imposé par freqtrade pour ordres market).
+- Runner scripts/run_trials.py : ordre du registre imposé, garde anti-scellé, reprise
+  sur interruption sans re-run, compteur d'essais dans STATE.json, résultats de
+  performance NON consultés pendant la boucle (logs fichiers, métriques après le 7e essai).
+
+## 2026-08-10 01:50 — Smoke test de plomberie lancé (hors périmètre d'évaluation)
+- Fenêtre 2020-12-01 → 2021-01-01 : ANTÉRIEURE à la calibration. Objectif : vérifier que
+  les 7 stratégies s'exécutent (signaux, callbacks, exports) sans erreur.
+- Ses chiffres ne constituent PAS un essai, ne seront pas utilisés pour la sélection et
+  ne seront pas rapportés comme des résultats.

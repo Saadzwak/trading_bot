@@ -1,10 +1,10 @@
 {
-  "phase": 2,
-  "sous_étape": "2.4 terminé — gel committé ; préparation données Phase 3",
+  "phase": 3,
+  "sous_étape": "3.0 préparation — smoke test en cours, analyses de biais à suivre",
   "essais_consommés": 0,
   "essais_budget": 7,
   "jeu_scellé_ouvert": false,
   "hash_commit_gel": "edbb4397a790702046dad47dd1bc034e379e25fc",
-  "dernière_action": "2026-08-10 01:41 — commit de gel edbb439 ; freqtrade 2026.7 installé",
-  "prochaine_action": "téléchargement données 2020-09→2024-12 (en cours, arrière-plan) ; intégrer analyses agents ; implémenter les 7 stratégies ; config freqtrade ; puis Phase 3 backtests dans l'ordre A1→C2"
+  "dernière_action": "2026-08-10 01:50 — stratégies implémentées (7/7 OK, 0 hyperopt), runner écrit, smoke test Dec-2020 lancé",
+  "prochaine_action": "à la fin du smoke test : lookahead-analysis + recursive-analysis ; puis scripts/run_trials.py (7 essais, ordre du registre) ; métriques + DSR après le 7e essai"
 }

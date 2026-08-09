@@ -1,0 +1,52 @@
+{
+  "bot_name": "banc_recherche",
+  "dry_run": true,
+  "trading_mode": "spot",
+  "margin_mode": "",
+  "stake_currency": "USDT",
+  "stake_amount": 1000,
+  "dry_run_wallet": 10000,
+  "max_open_trades": 10,
+  "timeframe": "1h",
+  "dataformat_ohlcv": "feather",
+  "user_data_dir": "./user_data",
+  "exchange": {
+    "name": "binance",
+    "key": "",
+    "secret": "",
+    "ccxt_config": {},
+    "ccxt_async_config": {},
+    "pair_whitelist": [
+      "BTC/USDT", "ETH/USDT", "XRP/USDT", "LTC/USDT", "GRT/USDT",
+      "BCH/USDT", "LINK/USDT", "BNB/USDT", "ADA/USDT", "XLM/USDT"
+    ],
+    "pair_blacklist": []
+  },
+  "pairlists": [
+    { "method": "StaticPairList" }
+  ],
+  "entry_pricing": {
+    "price_side": "other",
+    "use_order_book": true,
+    "order_book_top": 1,
+    "price_last_balance": 0.0,
+    "check_depth_of_market": { "enabled": false, "bids_to_ask_delta": 1 }
+  },
+  "exit_pricing": {
+    "price_side": "other",
+    "use_order_book": true,
+    "order_book_top": 1
+  },
+  "order_types": {
+    "entry": "market",
+    "exit": "market",
+    "stoploss": "market",
+    "stoploss_on_exchange": false
+  },
+  "unfilledtimeout": {
+    "entry": 10,
+    "exit": 10,
+    "unit": "minutes"
+  },
+  "internals": {}
+}

@@ -1,0 +1,1200 @@
+{
+  "XRPUSDT-1h": {
+    "couverture": {
+      "première": "2020-09-01T00:00:00+00:00",
+      "dernière": "2024-12-31T23:00:00+00:00",
+      "n_bougies": 37973
+    },
+    "mois_absents_archive": [],
+    "trous_intra_série": [
+      {
+        "après": "2020-11-30T05:00:00+00:00",
+        "reprise": "2020-11-30T07:00:00+00:00",
+        "bougies_manquantes": 1
+      },
+      {
+        "après": "2020-12-21T14:00:00+00:00",
+        "reprise": "2020-12-21T18:00:00+00:00",
+        "bougies_manquantes": 3
+      },
+      {
+        "après": "2020-12-25T01:00:00+00:00",
+        "reprise": "2020-12-25T03:00:00+00:00",
+        "bougies_manquantes": 1
+      },
+      {
+        "après": "2021-02-11T03:00:00+00:00",
+        "reprise": "2021-02-11T05:00:00+00:00",
+        "bougies_manquantes": 1
+      },
+      {
+        "après": "2021-03-06T01:00:00+00:00",
+        "reprise": "2021-03-06T03:00:00+00:00",
+        "bougies_manquantes": 1
+      },
+      {
+        "après": "2021-04-20T01:00:00+00:00",
+        "reprise": "2021-04-20T04:00:00+00:00",
+        "bougies_manquantes": 2
+      },
+      {
+        "après": "2021-04-25T04:00:00+00:00",
+        "reprise": "2021-04-25T08:00:00+00:00",
+        "bougies_manquantes": 3
+      },
+      {
+        "après": "2021-08-13T01:00:00+00:00",
+        "reprise": "2021-08-13T06:00:00+00:00",
+        "bougies_manquantes": 4
+      },
+      {
+        "après": "2021-09-29T06:00:00+00:00",
+        "reprise": "2021-09-29T09:00:00+00:00",
+        "bougies_manquantes": 2
+      },
+      {
+        "après": "2023-03-24T12:00:00+00:00",
+        "reprise": "2023-03-24T14:00:00+00:00",
+        "bougies_manquantes": 1
+      }
+    ]
+  },
+  "BTCUSDT-1h": {
+    "couverture": {
+      "première": "2020-09-01T00:00:00+00:00",
+      "dernière": "2024-12-31T23:00:00+00:00",
+      "n_bougies": 37973
+    },
+    "mois_absents_archive": [],
+    "trous_intra_série": [
+      {
+        "après": "2020-11-30T05:00:00+00:00",
+        "reprise": "2020-11-30T07:00:00+00:00",
+        "bougies_manquantes": 1
+      },
+      {
+        "après": "2020-12-21T14:00:00+00:00",
+        "reprise": "2020-12-21T18:00:00+00:00",
+        "bougies_manquantes": 3
+      },
+      {
+        "après": "2020-12-25T01:00:00+00:00",
+        "reprise": "2020-12-25T03:00:00+00:00",
+        "bougies_manquantes": 1
+      },
+      {
+        "après": "2021-02-11T03:00:00+00:00",
+        "reprise": "2021-02-11T05:00:00+00:00",
+        "bougies_manquantes": 1
+      },
+      {
+        "après": "2021-03-06T01:00:00+00:00",
+        "reprise": "2021-03-06T03:00:00+00:00",
+        "bougies_manquantes": 1
+      },
+      {
+        "après": "2021-04-20T01:00:00+00:00",
+        "reprise": "2021-04-20T04:00:00+00:00",
+        "bougies_manquantes": 2
+      },
+      {
+        "après": "2021-04-25T04:00:00+00:00",
+        "reprise": "2021-04-25T08:00:00+00:00",
+        "bougies_manquantes": 3
+      },
+      {
+        "après": "2021-08-13T01:00:00+00:00",
+        "reprise": "2021-08-13T06:00:00+00:00",
+        "bougies_manquantes": 4
+      },
+      {
+        "après": "2021-09-29T06:00:00+00:00",
+        "reprise": "2021-09-29T09:00:00+00:00",
+        "bougies_manquantes": 2
+      },
+      {
+        "après": "2023-03-24T12:00:00+00:00",
+        "reprise": "2023-03-24T14:00:00+00:00",
+        "bougies_manquantes": 1
+      }
+    ]
+  },
+  "ETHUSDT-1h": {
+    "couverture": {
+      "première": "2020-09-01T00:00:00+00:00",
+      "dernière": "2024-12-31T23:00:00+00:00",
+      "n_bougies": 37973
+    },
+    "mois_absents_archive": [],
+    "trous_intra_série": [
+      {
+        "après": "2020-11-30T05:00:00+00:00",
+        "reprise": "2020-11-30T07:00:00+00:00",
+        "bougies_manquantes": 1
+      },
+      {
+        "après": "2020-12-21T14:00:00+00:00",
+        "reprise": "2020-12-21T18:00:00+00:00",
+        "bougies_manquantes": 3
+      },
+      {
+        "après": "2020-12-25T01:00:00+00:00",
+        "reprise": "2020-12-25T03:00:00+00:00",
+        "bougies_manquantes": 1
+      },
+      {
+        "après": "2021-02-11T03:00:00+00:00",
+        "reprise": "2021-02-11T05:00:00+00:00",
+        "bougies_manquantes": 1
+      },
+      {
+        "après": "2021-03-06T01:00:00+00:00",
+        "reprise": "2021-03-06T03:00:00+00:00",
+        "bougies_manquantes": 1
+      },
+      {
+        "après": "2021-04-20T01:00:00+00:00",
+        "reprise": "2021-04-20T04:00:00+00:00",
+        "bougies_manquantes": 2
+      },
+      {
+        "après": "2021-04-25T04:00:00+00:00",
+        "reprise": "2021-04-25T08:00:00+00:00",
+        "bougies_manquantes": 3
+      },
+      {
+        "après": "2021-08-13T01:00:00+00:00",
+        "reprise": "2021-08-13T06:00:00+00:00",
+        "bougies_manquantes": 4
+      },
+      {
+        "après": "2021-09-29T06:00:00+00:00",
+        "reprise": "2021-09-29T09:00:00+00:00",
+        "bougies_manquantes": 2
+      },
+      {
+        "après": "2023-03-24T12:00:00+00:00",
+        "reprise": "2023-03-24T14:00:00+00:00",
+        "bougies_manquantes": 1
+      }
+    ]
+  },
+  "XRPUSDT-5m": {
+    "couverture": {
+      "première": "2020-09-01T00:00:00+00:00",
+      "dernière": "2024-12-31T23:55:00+00:00",
+      "n_bougies": 455621
+    },
+    "mois_absents_archive": [],
+    "trous_intra_série": [
+      {
+        "après": "2020-11-30T05:55:00+00:00",
+        "reprise": "2020-11-30T07:00:00+00:00",
+        "bougies_manquantes": 12
+      },
+      {
+        "après": "2020-12-21T14:05:00+00:00",
+        "reprise": "2020-12-21T18:00:00+00:00",
+        "bougies_manquantes": 46
+      },
+      {
+        "après": "2020-12-25T01:55:00+00:00",
+        "reprise": "2020-12-25T03:00:00+00:00",
+        "bougies_manquantes": 12
+      },
+      {
+        "après": "2021-02-11T03:40:00+00:00",
+        "reprise": "2021-02-11T05:00:00+00:00",
+        "bougies_manquantes": 15
+      },
+      {
+        "après": "2021-03-06T01:55:00+00:00",
+        "reprise": "2021-03-06T03:30:00+00:00",
+        "bougies_manquantes": 18
+      },
+      {
+        "après": "2021-04-20T01:55:00+00:00",
+        "reprise": "2021-04-20T04:30:00+00:00",
+        "bougies_manquantes": 30
+      },
+      {
+        "après": "2021-04-25T04:00:00+00:00",
+        "reprise": "2021-04-25T08:45:00+00:00",
+        "bougies_manquantes": 56
+      },
+      {
+        "après": "2021-08-13T01:55:00+00:00",
+        "reprise": "2021-08-13T06:30:00+00:00",
+        "bougies_manquantes": 54
+      },
+      {
+        "après": "2021-09-29T06:55:00+00:00",
+        "reprise": "2021-09-29T09:00:00+00:00",
+        "bougies_manquantes": 24
+      },
+      {
+        "après": "2023-03-24T12:35:00+00:00",
+        "reprise": "2023-03-24T14:00:00+00:00",
+        "bougies_manquantes": 16
+      }
+    ]
+  },
+  "ETHUSDT-5m": {
+    "couverture": {
+      "première": "2020-09-01T00:00:00+00:00",
+      "dernière": "2024-12-31T23:55:00+00:00",
+      "n_bougies": 455621
+    },
+    "mois_absents_archive": [],
+    "trous_intra_série": [
+      {
+        "après": "2020-11-30T05:55:00+00:00",
+        "reprise": "2020-11-30T07:00:00+00:00",
+        "bougies_manquantes": 12
+      },
+      {
+        "après": "2020-12-21T14:05:00+00:00",
+        "reprise": "2020-12-21T18:00:00+00:00",
+        "bougies_manquantes": 46
+      },
+      {
+        "après": "2020-12-25T01:55:00+00:00",
+        "reprise": "2020-12-25T03:00:00+00:00",
+        "bougies_manquantes": 12
+      },
+      {
+        "après": "2021-02-11T03:40:00+00:00",
+        "reprise": "2021-02-11T05:00:00+00:00",
+        "bougies_manquantes": 15
+      },
+      {
+        "après": "2021-03-06T01:55:00+00:00",
+        "reprise": "2021-03-06T03:30:00+00:00",
+        "bougies_manquantes": 18
+      },
+      {
+        "après": "2021-04-20T01:55:00+00:00",
+        "reprise": "2021-04-20T04:30:00+00:00",
+        "bougies_manquantes": 30
+      },
+      {
+        "après": "2021-04-25T04:00:00+00:00",
+        "reprise": "2021-04-25T08:45:00+00:00",
+        "bougies_manquantes": 56
+      },
+      {
+        "après": "2021-08-13T01:55:00+00:00",
+        "reprise": "2021-08-13T06:30:00+00:00",
+        "bougies_manquantes": 54
+      },
+      {
+        "après": "2021-09-29T06:55:00+00:00",
+        "reprise": "2021-09-29T09:00:00+00:00",
+        "bougies_manquantes": 24
+      },
+      {
+        "après": "2023-03-24T12:35:00+00:00",
+        "reprise": "2023-03-24T14:00:00+00:00",
+        "bougies_manquantes": 16
+      }
+    ]
+  },
+  "BTCUSDT-5m": {
+    "couverture": {
+      "première": "2020-09-01T00:00:00+00:00",
+      "dernière": "2024-12-31T23:55:00+00:00",
+      "n_bougies": 455621
+    },
+    "mois_absents_archive": [],
+    "trous_intra_série": [
+      {
+        "après": "2020-11-30T05:55:00+00:00",
+        "reprise": "2020-11-30T07:00:00+00:00",
+        "bougies_manquantes": 12
+      },
+      {
+        "après": "2020-12-21T14:05:00+00:00",
+        "reprise": "2020-12-21T18:00:00+00:00",
+        "bougies_manquantes": 46
+      },
+      {
+        "après": "2020-12-25T01:55:00+00:00",
+        "reprise": "2020-12-25T03:00:00+00:00",
+        "bougies_manquantes": 12
+      },
+      {
+        "après": "2021-02-11T03:40:00+00:00",
+        "reprise": "2021-02-11T05:00:00+00:00",
+        "bougies_manquantes": 15
+      },
+      {
+        "après": "2021-03-06T01:55:00+00:00",
+        "reprise": "2021-03-06T03:30:00+00:00",
+        "bougies_manquantes": 18
+      },
+      {
+        "après": "2021-04-20T01:55:00+00:00",
+        "reprise": "2021-04-20T04:30:00+00:00",
+        "bougies_manquantes": 30
+      },
+      {
+        "après": "2021-04-25T04:00:00+00:00",
+        "reprise": "2021-04-25T08:45:00+00:00",
+        "bougies_manquantes": 56
+      },
+      {
+        "après": "2021-08-13T01:55:00+00:00",
+        "reprise": "2021-08-13T06:30:00+00:00",
+        "bougies_manquantes": 54
+      },
+      {
+        "après": "2021-09-29T06:55:00+00:00",
+        "reprise": "2021-09-29T09:00:00+00:00",
+        "bougies_manquantes": 24
+      },
+      {
+        "après": "2023-03-24T12:35:00+00:00",
+        "reprise": "2023-03-24T14:00:00+00:00",
+        "bougies_manquantes": 16
+      }
+    ]
+  },
+  "LTCUSDT-1h": {
+    "couverture": {
+      "première": "2020-09-01T00:00:00+00:00",
+      "dernière": "2024-12-31T23:00:00+00:00",
+      "n_bougies": 37973
+    },
+    "mois_absents_archive": [],
+    "trous_intra_série": [
+      {
+        "après": "2020-11-30T05:00:00+00:00",
+        "reprise": "2020-11-30T07:00:00+00:00",
+        "bougies_manquantes": 1
+      },
+      {
+        "après": "2020-12-21T14:00:00+00:00",
+        "reprise": "2020-12-21T18:00:00+00:00",
+        "bougies_manquantes": 3
+      },
+      {
+        "après": "2020-12-25T01:00:00+00:00",
+        "reprise": "2020-12-25T03:00:00+00:00",
+        "bougies_manquantes": 1
+      },
+      {
+        "après": "2021-02-11T03:00:00+00:00",
+        "reprise": "2021-02-11T05:00:00+00:00",
+        "bougies_manquantes": 1
+      },
+      {
+        "après": "2021-03-06T01:00:00+00:00",
+        "reprise": "2021-03-06T03:00:00+00:00",
+        "bougies_manquantes": 1
+      },
+      {
+        "après": "2021-04-20T01:00:00+00:00",
+        "reprise": "2021-04-20T04:00:00+00:00",
+        "bougies_manquantes": 2
+      },
+      {
+        "après": "2021-04-25T04:00:00+00:00",
+        "reprise": "2021-04-25T08:00:00+00:00",
+        "bougies_manquantes": 3
+      },
+      {
+        "après": "2021-08-13T01:00:00+00:00",
+        "reprise": "2021-08-13T06:00:00+00:00",
+        "bougies_manquantes": 4
+      },
+      {
+        "après": "2021-09-29T06:00:00+00:00",
+        "reprise": "2021-09-29T09:00:00+00:00",
+        "bougies_manquantes": 2
+      },
+      {
+        "après": "2023-03-24T12:00:00+00:00",
+        "reprise": "2023-03-24T14:00:00+00:00",
+        "bougies_manquantes": 1
+      }
+    ]
+  },
+  "GRTUSDT-1h": {
+    "couverture": {
+      "première": "2020-12-17T20:00:00+00:00",
+      "dernière": "2024-12-31T23:00:00+00:00",
+      "n_bougies": 35386
+    },
+    "mois_absents_archive": [
+      "2020-09",
+      "2020-10",
+      "2020-11"
+    ],
+    "trous_intra_série": [
+      {
+        "après": "2020-12-21T14:00:00+00:00",
+        "reprise": "2020-12-21T18:00:00+00:00",
+        "bougies_manquantes": 3
+      },
+      {
+        "après": "2020-12-25T01:00:00+00:00",
+        "reprise": "2020-12-25T03:00:00+00:00",
+        "bougies_manquantes": 1
+      },
+      {
+        "après": "2021-02-11T03:00:00+00:00",
+        "reprise": "2021-02-11T05:00:00+00:00",
+        "bougies_manquantes": 1
+      },
+      {
+        "après": "2021-03-06T01:00:00+00:00",
+        "reprise": "2021-03-06T03:00:00+00:00",
+        "bougies_manquantes": 1
+      },
+      {
+        "après": "2021-04-20T01:00:00+00:00",
+        "reprise": "2021-04-20T04:00:00+00:00",
+        "bougies_manquantes": 2
+      },
+      {
+        "après": "2021-04-25T04:00:00+00:00",
+        "reprise": "2021-04-25T08:00:00+00:00",
+        "bougies_manquantes": 3
+      },
+      {
+        "après": "2021-08-13T01:00:00+00:00",
+        "reprise": "2021-08-13T06:00:00+00:00",
+        "bougies_manquantes": 4
+      },
+      {
+        "après": "2021-09-29T06:00:00+00:00",
+        "reprise": "2021-09-29T09:00:00+00:00",
+        "bougies_manquantes": 2
+      },
+      {
+        "après": "2023-03-24T12:00:00+00:00",
+        "reprise": "2023-03-24T14:00:00+00:00",
+        "bougies_manquantes": 1
+      }
+    ]
+  },
+  "LTCUSDT-5m": {
+    "couverture": {
+      "première": "2020-09-01T00:00:00+00:00",
+      "dernière": "2024-12-31T23:55:00+00:00",
+      "n_bougies": 455621
+    },
+    "mois_absents_archive": [],
+    "trous_intra_série": [
+      {
+        "après": "2020-11-30T05:55:00+00:00",
+        "reprise": "2020-11-30T07:00:00+00:00",
+        "bougies_manquantes": 12
+      },
+      {
+        "après": "2020-12-21T14:05:00+00:00",
+        "reprise": "2020-12-21T18:00:00+00:00",
+        "bougies_manquantes": 46
+      },
+      {
+        "après": "2020-12-25T01:55:00+00:00",
+        "reprise": "2020-12-25T03:00:00+00:00",
+        "bougies_manquantes": 12
+      },
+      {
+        "après": "2021-02-11T03:40:00+00:00",
+        "reprise": "2021-02-11T05:00:00+00:00",
+        "bougies_manquantes": 15
+      },
+      {
+        "après": "2021-03-06T01:55:00+00:00",
+        "reprise": "2021-03-06T03:30:00+00:00",
+        "bougies_manquantes": 18
+      },
+      {
+        "après": "2021-04-20T01:55:00+00:00",
+        "reprise": "2021-04-20T04:30:00+00:00",
+        "bougies_manquantes": 30
+      },
+      {
+        "après": "2021-04-25T04:00:00+00:00",
+        "reprise": "2021-04-25T08:45:00+00:00",
+        "bougies_manquantes": 56
+      },
+      {
+        "après": "2021-08-13T01:55:00+00:00",
+        "reprise": "2021-08-13T06:30:00+00:00",
+        "bougies_manquantes": 54
+      },
+      {
+        "après": "2021-09-29T06:55:00+00:00",
+        "reprise": "2021-09-29T09:00:00+00:00",
+        "bougies_manquantes": 24
+      },
+      {
+        "après": "2023-03-24T12:35:00+00:00",
+        "reprise": "2023-03-24T14:00:00+00:00",
+        "bougies_manquantes": 16
+      }
+    ]
+  },
+  "BCHUSDT-1h": {
+    "couverture": {
+      "première": "2020-09-01T00:00:00+00:00",
+      "dernière": "2024-12-31T23:00:00+00:00",
+      "n_bougies": 37973
+    },
+    "mois_absents_archive": [],
+    "trous_intra_série": [
+      {
+        "après": "2020-11-30T05:00:00+00:00",
+        "reprise": "2020-11-30T07:00:00+00:00",
+        "bougies_manquantes": 1
+      },
+      {
+        "après": "2020-12-21T14:00:00+00:00",
+        "reprise": "2020-12-21T18:00:00+00:00",
+        "bougies_manquantes": 3
+      },
+      {
+        "après": "2020-12-25T01:00:00+00:00",
+        "reprise": "2020-12-25T03:00:00+00:00",
+        "bougies_manquantes": 1
+      },
+      {
+        "après": "2021-02-11T03:00:00+00:00",
+        "reprise": "2021-02-11T05:00:00+00:00",
+        "bougies_manquantes": 1
+      },
+      {
+        "après": "2021-03-06T01:00:00+00:00",
+        "reprise": "2021-03-06T03:00:00+00:00",
+        "bougies_manquantes": 1
+      },
+      {
+        "après": "2021-04-20T01:00:00+00:00",
+        "reprise": "2021-04-20T04:00:00+00:00",
+        "bougies_manquantes": 2
+      },
+      {
+        "après": "2021-04-25T04:00:00+00:00",
+        "reprise": "2021-04-25T08:00:00+00:00",
+        "bougies_manquantes": 3
+      },
+      {
+        "après": "2021-08-13T01:00:00+00:00",
+        "reprise": "2021-08-13T06:00:00+00:00",
+        "bougies_manquantes": 4
+      },
+      {
+        "après": "2021-09-29T06:00:00+00:00",
+        "reprise": "2021-09-29T09:00:00+00:00",
+        "bougies_manquantes": 2
+      },
+      {
+        "après": "2023-03-24T12:00:00+00:00",
+        "reprise": "2023-03-24T14:00:00+00:00",
+        "bougies_manquantes": 1
+      }
+    ]
+  },
+  "LINKUSDT-1h": {
+    "couverture": {
+      "première": "2020-09-01T00:00:00+00:00",
+      "dernière": "2024-12-31T23:00:00+00:00",
+      "n_bougies": 37973
+    },
+    "mois_absents_archive": [],
+    "trous_intra_série": [
+      {
+        "après": "2020-11-30T05:00:00+00:00",
+        "reprise": "2020-11-30T07:00:00+00:00",
+        "bougies_manquantes": 1
+      },
+      {
+        "après": "2020-12-21T14:00:00+00:00",
+        "reprise": "2020-12-21T18:00:00+00:00",
+        "bougies_manquantes": 3
+      },
+      {
+        "après": "2020-12-25T01:00:00+00:00",
+        "reprise": "2020-12-25T03:00:00+00:00",
+        "bougies_manquantes": 1
+      },
+      {
+        "après": "2021-02-11T03:00:00+00:00",
+        "reprise": "2021-02-11T05:00:00+00:00",
+        "bougies_manquantes": 1
+      },
+      {
+        "après": "2021-03-06T01:00:00+00:00",
+        "reprise": "2021-03-06T03:00:00+00:00",
+        "bougies_manquantes": 1
+      },
+      {
+        "après": "2021-04-20T01:00:00+00:00",
+        "reprise": "2021-04-20T04:00:00+00:00",
+        "bougies_manquantes": 2
+      },
+      {
+        "après": "2021-04-25T04:00:00+00:00",
+        "reprise": "2021-04-25T08:00:00+00:00",
+        "bougies_manquantes": 3
+      },
+      {
+        "après": "2021-08-13T01:00:00+00:00",
+        "reprise": "2021-08-13T06:00:00+00:00",
+        "bougies_manquantes": 4
+      },
+      {
+        "après": "2021-09-29T06:00:00+00:00",
+        "reprise": "2021-09-29T09:00:00+00:00",
+        "bougies_manquantes": 2
+      },
+      {
+        "après": "2023-03-24T12:00:00+00:00",
+        "reprise": "2023-03-24T14:00:00+00:00",
+        "bougies_manquantes": 1
+      }
+    ]
+  },
+  "GRTUSDT-5m": {
+    "couverture": {
+      "première": "2020-12-17T20:30:00+00:00",
+      "dernière": "2024-12-31T23:55:00+00:00",
+      "n_bougies": 424571
+    },
+    "mois_absents_archive": [
+      "2020-09",
+      "2020-10",
+      "2020-11"
+    ],
+    "trous_intra_série": [
+      {
+        "après": "2020-12-21T14:05:00+00:00",
+        "reprise": "2020-12-21T18:00:00+00:00",
+        "bougies_manquantes": 46
+      },
+      {
+        "après": "2020-12-25T01:55:00+00:00",
+        "reprise": "2020-12-25T03:00:00+00:00",
+        "bougies_manquantes": 12
+      },
+      {
+        "après": "2021-02-11T03:40:00+00:00",
+        "reprise": "2021-02-11T05:00:00+00:00",
+        "bougies_manquantes": 15
+      },
+      {
+        "après": "2021-03-06T01:55:00+00:00",
+        "reprise": "2021-03-06T03:30:00+00:00",
+        "bougies_manquantes": 18
+      },
+      {
+        "après": "2021-04-20T01:55:00+00:00",
+        "reprise": "2021-04-20T04:30:00+00:00",
+        "bougies_manquantes": 30
+      },
+      {
+        "après": "2021-04-25T04:00:00+00:00",
+        "reprise": "2021-04-25T08:45:00+00:00",
+        "bougies_manquantes": 56
+      },
+      {
+        "après": "2021-08-13T01:55:00+00:00",
+        "reprise": "2021-08-13T06:30:00+00:00",
+        "bougies_manquantes": 54
+      },
+      {
+        "après": "2021-09-29T06:55:00+00:00",
+        "reprise": "2021-09-29T09:00:00+00:00",
+        "bougies_manquantes": 24
+      },
+      {
+        "après": "2023-03-24T12:35:00+00:00",
+        "reprise": "2023-03-24T14:00:00+00:00",
+        "bougies_manquantes": 16
+      }
+    ]
+  },
+  "BCHUSDT-5m": {
+    "couverture": {
+      "première": "2020-09-01T00:00:00+00:00",
+      "dernière": "2024-12-31T23:55:00+00:00",
+      "n_bougies": 455621
+    },
+    "mois_absents_archive": [],
+    "trous_intra_série": [
+      {
+        "après": "2020-11-30T05:55:00+00:00",
+        "reprise": "2020-11-30T07:00:00+00:00",
+        "bougies_manquantes": 12
+      },
+      {
+        "après": "2020-12-21T14:05:00+00:00",
+        "reprise": "2020-12-21T18:00:00+00:00",
+        "bougies_manquantes": 46
+      },
+      {
+        "après": "2020-12-25T01:55:00+00:00",
+        "reprise": "2020-12-25T03:00:00+00:00",
+        "bougies_manquantes": 12
+      },
+      {
+        "après": "2021-02-11T03:40:00+00:00",
+        "reprise": "2021-02-11T05:00:00+00:00",
+        "bougies_manquantes": 15
+      },
+      {
+        "après": "2021-03-06T01:55:00+00:00",
+        "reprise": "2021-03-06T03:30:00+00:00",
+        "bougies_manquantes": 18
+      },
+      {
+        "après": "2021-04-20T01:55:00+00:00",
+        "reprise": "2021-04-20T04:30:00+00:00",
+        "bougies_manquantes": 30
+      },
+      {
+        "après": "2021-04-25T04:00:00+00:00",
+        "reprise": "2021-04-25T08:45:00+00:00",
+        "bougies_manquantes": 56
+      },
+      {
+        "après": "2021-08-13T01:55:00+00:00",
+        "reprise": "2021-08-13T06:30:00+00:00",
+        "bougies_manquantes": 54
+      },
+      {
+        "après": "2021-09-29T06:55:00+00:00",
+        "reprise": "2021-09-29T09:00:00+00:00",
+        "bougies_manquantes": 24
+      },
+      {
+        "après": "2023-03-24T12:35:00+00:00",
+        "reprise": "2023-03-24T14:00:00+00:00",
+        "bougies_manquantes": 16
+      }
+    ]
+  },
+  "BNBUSDT-1h": {
+    "couverture": {
+      "première": "2020-09-01T00:00:00+00:00",
+      "dernière": "2024-12-31T23:00:00+00:00",
+      "n_bougies": 37973
+    },
+    "mois_absents_archive": [],
+    "trous_intra_série": [
+      {
+        "après": "2020-11-30T05:00:00+00:00",
+        "reprise": "2020-11-30T07:00:00+00:00",
+        "bougies_manquantes": 1
+      },
+      {
+        "après": "2020-12-21T14:00:00+00:00",
+        "reprise": "2020-12-21T18:00:00+00:00",
+        "bougies_manquantes": 3
+      },
+      {
+        "après": "2020-12-25T01:00:00+00:00",
+        "reprise": "2020-12-25T03:00:00+00:00",
+        "bougies_manquantes": 1
+      },
+      {
+        "après": "2021-02-11T03:00:00+00:00",
+        "reprise": "2021-02-11T05:00:00+00:00",
+        "bougies_manquantes": 1
+      },
+      {
+        "après": "2021-03-06T01:00:00+00:00",
+        "reprise": "2021-03-06T03:00:00+00:00",
+        "bougies_manquantes": 1
+      },
+      {
+        "après": "2021-04-20T01:00:00+00:00",
+        "reprise": "2021-04-20T04:00:00+00:00",
+        "bougies_manquantes": 2
+      },
+      {
+        "après": "2021-04-25T04:00:00+00:00",
+        "reprise": "2021-04-25T08:00:00+00:00",
+        "bougies_manquantes": 3
+      },
+      {
+        "après": "2021-08-13T01:00:00+00:00",
+        "reprise": "2021-08-13T06:00:00+00:00",
+        "bougies_manquantes": 4
+      },
+      {
+        "après": "2021-09-29T06:00:00+00:00",
+        "reprise": "2021-09-29T09:00:00+00:00",
+        "bougies_manquantes": 2
+      },
+      {
+        "après": "2023-03-24T12:00:00+00:00",
+        "reprise": "2023-03-24T14:00:00+00:00",
+        "bougies_manquantes": 1
+      }
+    ]
+  },
+  "LINKUSDT-5m": {
+    "couverture": {
+      "première": "2020-09-01T00:00:00+00:00",
+      "dernière": "2024-12-31T23:55:00+00:00",
+      "n_bougies": 455621
+    },
+    "mois_absents_archive": [],
+    "trous_intra_série": [
+      {
+        "après": "2020-11-30T05:55:00+00:00",
+        "reprise": "2020-11-30T07:00:00+00:00",
+        "bougies_manquantes": 12
+      },
+      {
+        "après": "2020-12-21T14:05:00+00:00",
+        "reprise": "2020-12-21T18:00:00+00:00",
+        "bougies_manquantes": 46
+      },
+      {
+        "après": "2020-12-25T01:55:00+00:00",
+        "reprise": "2020-12-25T03:00:00+00:00",
+        "bougies_manquantes": 12
+      },
+      {
+        "après": "2021-02-11T03:40:00+00:00",
+        "reprise": "2021-02-11T05:00:00+00:00",
+        "bougies_manquantes": 15
+      },
+      {
+        "après": "2021-03-06T01:55:00+00:00",
+        "reprise": "2021-03-06T03:30:00+00:00",
+        "bougies_manquantes": 18
+      },
+      {
+        "après": "2021-04-20T01:55:00+00:00",
+        "reprise": "2021-04-20T04:30:00+00:00",
+        "bougies_manquantes": 30
+      },
+      {
+        "après": "2021-04-25T04:00:00+00:00",
+        "reprise": "2021-04-25T08:45:00+00:00",
+        "bougies_manquantes": 56
+      },
+      {
+        "après": "2021-08-13T01:55:00+00:00",
+        "reprise": "2021-08-13T06:30:00+00:00",
+        "bougies_manquantes": 54
+      },
+      {
+        "après": "2021-09-29T06:55:00+00:00",
+        "reprise": "2021-09-29T09:00:00+00:00",
+        "bougies_manquantes": 24
+      },
+      {
+        "après": "2023-03-24T12:35:00+00:00",
+        "reprise": "2023-03-24T14:00:00+00:00",
+        "bougies_manquantes": 16
+      }
+    ]
+  },
+  "ADAUSDT-1h": {
+    "couverture": {
+      "première": "2020-09-01T00:00:00+00:00",
+      "dernière": "2024-12-31T23:00:00+00:00",
+      "n_bougies": 37973
+    },
+    "mois_absents_archive": [],
+    "trous_intra_série": [
+      {
+        "après": "2020-11-30T05:00:00+00:00",
+        "reprise": "2020-11-30T07:00:00+00:00",
+        "bougies_manquantes": 1
+      },
+      {
+        "après": "2020-12-21T14:00:00+00:00",
+        "reprise": "2020-12-21T18:00:00+00:00",
+        "bougies_manquantes": 3
+      },
+      {
+        "après": "2020-12-25T01:00:00+00:00",
+        "reprise": "2020-12-25T03:00:00+00:00",
+        "bougies_manquantes": 1
+      },
+      {
+        "après": "2021-02-11T03:00:00+00:00",
+        "reprise": "2021-02-11T05:00:00+00:00",
+        "bougies_manquantes": 1
+      },
+      {
+        "après": "2021-03-06T01:00:00+00:00",
+        "reprise": "2021-03-06T03:00:00+00:00",
+        "bougies_manquantes": 1
+      },
+      {
+        "après": "2021-04-20T01:00:00+00:00",
+        "reprise": "2021-04-20T04:00:00+00:00",
+        "bougies_manquantes": 2
+      },
+      {
+        "après": "2021-04-25T04:00:00+00:00",
+        "reprise": "2021-04-25T08:00:00+00:00",
+        "bougies_manquantes": 3
+      },
+      {
+        "après": "2021-08-13T01:00:00+00:00",
+        "reprise": "2021-08-13T06:00:00+00:00",
+        "bougies_manquantes": 4
+      },
+      {
+        "après": "2021-09-29T06:00:00+00:00",
+        "reprise": "2021-09-29T09:00:00+00:00",
+        "bougies_manquantes": 2
+      },
+      {
+        "après": "2023-03-24T12:00:00+00:00",
+        "reprise": "2023-03-24T14:00:00+00:00",
+        "bougies_manquantes": 1
+      }
+    ]
+  },
+  "XLMUSDT-1h": {
+    "couverture": {
+      "première": "2020-09-01T00:00:00+00:00",
+      "dernière": "2024-12-31T23:00:00+00:00",
+      "n_bougies": 37973
+    },
+    "mois_absents_archive": [],
+    "trous_intra_série": [
+      {
+        "après": "2020-11-30T05:00:00+00:00",
+        "reprise": "2020-11-30T07:00:00+00:00",
+        "bougies_manquantes": 1
+      },
+      {
+        "après": "2020-12-21T14:00:00+00:00",
+        "reprise": "2020-12-21T18:00:00+00:00",
+        "bougies_manquantes": 3
+      },
+      {
+        "après": "2020-12-25T01:00:00+00:00",
+        "reprise": "2020-12-25T03:00:00+00:00",
+        "bougies_manquantes": 1
+      },
+      {
+        "après": "2021-02-11T03:00:00+00:00",
+        "reprise": "2021-02-11T05:00:00+00:00",
+        "bougies_manquantes": 1
+      },
+      {
+        "après": "2021-03-06T01:00:00+00:00",
+        "reprise": "2021-03-06T03:00:00+00:00",
+        "bougies_manquantes": 1
+      },
+      {
+        "après": "2021-04-20T01:00:00+00:00",
+        "reprise": "2021-04-20T04:00:00+00:00",
+        "bougies_manquantes": 2
+      },
+      {
+        "après": "2021-04-25T04:00:00+00:00",
+        "reprise": "2021-04-25T08:00:00+00:00",
+        "bougies_manquantes": 3
+      },
+      {
+        "après": "2021-08-13T01:00:00+00:00",
+        "reprise": "2021-08-13T06:00:00+00:00",
+        "bougies_manquantes": 4
+      },
+      {
+        "après": "2021-09-29T06:00:00+00:00",
+        "reprise": "2021-09-29T09:00:00+00:00",
+        "bougies_manquantes": 2
+      },
+      {
+        "après": "2023-03-24T12:00:00+00:00",
+        "reprise": "2023-03-24T14:00:00+00:00",
+        "bougies_manquantes": 1
+      }
+    ]
+  },
+  "BNBUSDT-5m": {
+    "couverture": {
+      "première": "2020-09-01T00:00:00+00:00",
+      "dernière": "2024-12-31T23:55:00+00:00",
+      "n_bougies": 455621
+    },
+    "mois_absents_archive": [],
+    "trous_intra_série": [
+      {
+        "après": "2020-11-30T05:55:00+00:00",
+        "reprise": "2020-11-30T07:00:00+00:00",
+        "bougies_manquantes": 12
+      },
+      {
+        "après": "2020-12-21T14:05:00+00:00",
+        "reprise": "2020-12-21T18:00:00+00:00",
+        "bougies_manquantes": 46
+      },
+      {
+        "après": "2020-12-25T01:55:00+00:00",
+        "reprise": "2020-12-25T03:00:00+00:00",
+        "bougies_manquantes": 12
+      },
+      {
+        "après": "2021-02-11T03:40:00+00:00",
+        "reprise": "2021-02-11T05:00:00+00:00",
+        "bougies_manquantes": 15
+      },
+      {
+        "après": "2021-03-06T01:55:00+00:00",
+        "reprise": "2021-03-06T03:30:00+00:00",
+        "bougies_manquantes": 18
+      },
+      {
+        "après": "2021-04-20T01:55:00+00:00",
+        "reprise": "2021-04-20T04:30:00+00:00",
+        "bougies_manquantes": 30
+      },
+      {
+        "après": "2021-04-25T04:00:00+00:00",
+        "reprise": "2021-04-25T08:45:00+00:00",
+        "bougies_manquantes": 56
+      },
+      {
+        "après": "2021-08-13T01:55:00+00:00",
+        "reprise": "2021-08-13T06:30:00+00:00",
+        "bougies_manquantes": 54
+      },
+      {
+        "après": "2021-09-29T06:55:00+00:00",
+        "reprise": "2021-09-29T09:00:00+00:00",
+        "bougies_manquantes": 24
+      },
+      {
+        "après": "2023-03-24T12:35:00+00:00",
+        "reprise": "2023-03-24T14:00:00+00:00",
+        "bougies_manquantes": 16
+      }
+    ]
+  },
+  "ADAUSDT-5m": {
+    "couverture": {
+      "première": "2020-09-01T00:00:00+00:00",
+      "dernière": "2024-12-31T23:55:00+00:00",
+      "n_bougies": 455621
+    },
+    "mois_absents_archive": [],
+    "trous_intra_série": [
+      {
+        "après": "2020-11-30T05:55:00+00:00",
+        "reprise": "2020-11-30T07:00:00+00:00",
+        "bougies_manquantes": 12
+      },
+      {
+        "après": "2020-12-21T14:05:00+00:00",
+        "reprise": "2020-12-21T18:00:00+00:00",
+        "bougies_manquantes": 46
+      },
+      {
+        "après": "2020-12-25T01:55:00+00:00",
+        "reprise": "2020-12-25T03:00:00+00:00",
+        "bougies_manquantes": 12
+      },
+      {
+        "après": "2021-02-11T03:40:00+00:00",
+        "reprise": "2021-02-11T05:00:00+00:00",
+        "bougies_manquantes": 15
+      },
+      {
+        "après": "2021-03-06T01:55:00+00:00",
+        "reprise": "2021-03-06T03:30:00+00:00",
+        "bougies_manquantes": 18
+      },
+      {
+        "après": "2021-04-20T01:55:00+00:00",
+        "reprise": "2021-04-20T04:30:00+00:00",
+        "bougies_manquantes": 30
+      },
+      {
+        "après": "2021-04-25T04:00:00+00:00",
+        "reprise": "2021-04-25T08:45:00+00:00",
+        "bougies_manquantes": 56
+      },
+      {
+        "après": "2021-08-13T01:55:00+00:00",
+        "reprise": "2021-08-13T06:30:00+00:00",
+        "bougies_manquantes": 54
+      },
+      {
+        "après": "2021-09-29T06:55:00+00:00",
+        "reprise": "2021-09-29T09:00:00+00:00",
+        "bougies_manquantes": 24
+      },
+      {
+        "après": "2023-03-24T12:35:00+00:00",
+        "reprise": "2023-03-24T14:00:00+00:00",
+        "bougies_manquantes": 16
+      }
+    ]
+  },
+  "XLMUSDT-5m": {
+    "couverture": {
+      "première": "2020-09-01T00:00:00+00:00",
+      "dernière": "2024-12-31T23:55:00+00:00",
+      "n_bougies": 455621
+    },
+    "mois_absents_archive": [],
+    "trous_intra_série": [
+      {
+        "après": "2020-11-30T05:55:00+00:00",
+        "reprise": "2020-11-30T07:00:00+00:00",
+        "bougies_manquantes": 12
+      },
+      {
+        "après": "2020-12-21T14:05:00+00:00",
+        "reprise": "2020-12-21T18:00:00+00:00",
+        "bougies_manquantes": 46
+      },
+      {
+        "après": "2020-12-25T01:55:00+00:00",
+        "reprise": "2020-12-25T03:00:00+00:00",
+        "bougies_manquantes": 12
+      },
+      {
+        "après": "2021-02-11T03:40:00+00:00",
+        "reprise": "2021-02-11T05:00:00+00:00",
+        "bougies_manquantes": 15
+      },
+      {
+        "après": "2021-03-06T01:55:00+00:00",
+        "reprise": "2021-03-06T03:30:00+00:00",
+        "bougies_manquantes": 18
+      },
+      {
+        "après": "2021-04-20T01:55:00+00:00",
+        "reprise": "2021-04-20T04:30:00+00:00",
+        "bougies_manquantes": 30
+      },
+      {
+        "après": "2021-04-25T04:00:00+00:00",
+        "reprise": "2021-04-25T08:45:00+00:00",
+        "bougies_manquantes": 56
+      },
+      {
+        "après": "2021-08-13T01:55:00+00:00",
+        "reprise": "2021-08-13T06:30:00+00:00",
+        "bougies_manquantes": 54
+      },
+      {
+        "après": "2021-09-29T06:55:00+00:00",
+        "reprise": "2021-09-29T09:00:00+00:00",
+        "bougies_manquantes": 24
+      },
+      {
+        "après": "2023-03-24T12:35:00+00:00",
+        "reprise": "2023-03-24T14:00:00+00:00",
+        "bougies_manquantes": 16
+      }
+    ]
+  }
+}

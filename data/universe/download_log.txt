@@ -1,0 +1,23 @@
+Paires : ['BTCUSDT', 'ETHUSDT', 'XRPUSDT', 'LTCUSDT', 'GRTUSDT', 'BCHUSDT', 'LINKUSDT', 'BNBUSDT', 'ADAUSDT', 'XLMUSDT']
+OK XRPUSDT-1h: {'première': '2020-09-01T00:00:00+00:00', 'dernière': '2024-12-31T23:00:00+00:00', 'n_bougies': 37973} | mois absents: 0 | trous: 10
+OK BTCUSDT-1h: {'première': '2020-09-01T00:00:00+00:00', 'dernière': '2024-12-31T23:00:00+00:00', 'n_bougies': 37973} | mois absents: 0 | trous: 10
+OK ETHUSDT-1h: {'première': '2020-09-01T00:00:00+00:00', 'dernière': '2024-12-31T23:00:00+00:00', 'n_bougies': 37973} | mois absents: 0 | trous: 10
+OK XRPUSDT-5m: {'première': '2020-09-01T00:00:00+00:00', 'dernière': '2024-12-31T23:55:00+00:00', 'n_bougies': 455621} | mois absents: 0 | trous: 10
+OK ETHUSDT-5m: {'première': '2020-09-01T00:00:00+00:00', 'dernière': '2024-12-31T23:55:00+00:00', 'n_bougies': 455621} | mois absents: 0 | trous: 10
+OK BTCUSDT-5m: {'première': '2020-09-01T00:00:00+00:00', 'dernière': '2024-12-31T23:55:00+00:00', 'n_bougies': 455621} | mois absents: 0 | trous: 10
+OK LTCUSDT-1h: {'première': '2020-09-01T00:00:00+00:00', 'dernière': '2024-12-31T23:00:00+00:00', 'n_bougies': 37973} | mois absents: 0 | trous: 10
+OK GRTUSDT-1h: {'première': '2020-12-17T20:00:00+00:00', 'dernière': '2024-12-31T23:00:00+00:00', 'n_bougies': 35386} | mois absents: 3 | trous: 9
+OK LTCUSDT-5m: {'première': '2020-09-01T00:00:00+00:00', 'dernière': '2024-12-31T23:55:00+00:00', 'n_bougies': 455621} | mois absents: 0 | trous: 10
+OK BCHUSDT-1h: {'première': '2020-09-01T00:00:00+00:00', 'dernière': '2024-12-31T23:00:00+00:00', 'n_bougies': 37973} | mois absents: 0 | trous: 10
+OK LINKUSDT-1h: {'première': '2020-09-01T00:00:00+00:00', 'dernière': '2024-12-31T23:00:00+00:00', 'n_bougies': 37973} | mois absents: 0 | trous: 10
+OK GRTUSDT-5m: {'première': '2020-12-17T20:30:00+00:00', 'dernière': '2024-12-31T23:55:00+00:00', 'n_bougies': 424571} | mois absents: 3 | trous: 9
+OK BCHUSDT-5m: {'première': '2020-09-01T00:00:00+00:00', 'dernière': '2024-12-31T23:55:00+00:00', 'n_bougies': 455621} | mois absents: 0 | trous: 10
+OK BNBUSDT-1h: {'première': '2020-09-01T00:00:00+00:00', 'dernière': '2024-12-31T23:00:00+00:00', 'n_bougies': 37973} | mois absents: 0 | trous: 10
+OK LINKUSDT-5m: {'première': '2020-09-01T00:00:00+00:00', 'dernière': '2024-12-31T23:55:00+00:00', 'n_bougies': 455621} | mois absents: 0 | trous: 10
+OK ADAUSDT-1h: {'première': '2020-09-01T00:00:00+00:00', 'dernière': '2024-12-31T23:00:00+00:00', 'n_bougies': 37973} | mois absents: 0 | trous: 10
+OK XLMUSDT-1h: {'première': '2020-09-01T00:00:00+00:00', 'dernière': '2024-12-31T23:00:00+00:00', 'n_bougies': 37973} | mois absents: 0 | trous: 10
+OK BNBUSDT-5m: {'première': '2020-09-01T00:00:00+00:00', 'dernière': '2024-12-31T23:55:00+00:00', 'n_bougies': 455621} | mois absents: 0 | trous: 10
+OK ADAUSDT-5m: {'première': '2020-09-01T00:00:00+00:00', 'dernière': '2024-12-31T23:55:00+00:00', 'n_bougies': 455621} | mois absents: 0 | trous: 10
+OK XLMUSDT-5m: {'première': '2020-09-01T00:00:00+00:00', 'dernière': '2024-12-31T23:55:00+00:00', 'n_bougies': 455621} | mois absents: 0 | trous: 10
+
+Rapport de couverture → C:\Users\redaz\Desktop\trading_bot\data\universe\data_gaps.json
