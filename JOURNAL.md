@@ -254,6 +254,44 @@ y compris les erreurs.
   disponible pour un futur cycle pré-enregistré. La décision appartient à l'utilisateur.
 - La boucle autonome s'arrête ici. Reprise uniquement sur instruction explicite.
 
+## 2026-08-10 03:05 — Décision utilisateur au Point de blocage 1 : OPTION 1
+- Instruction explicite reçue dans le chat : le scellé n'est PAS ouvert, il reste
+  vierge. Phase 5 produite sur la base calibration + validation + walk-forward.
+- Exigences supplémentaires : verdict écrit sans atténuation ; section de puissance
+  statistique (années nécessaires pour détecter un Sharpe vrai de 0,5 à 80 % de
+  puissance, à partir du σ semestriel de 2,15) ; clôture du cycle ; dry_run reste true.
+
+## 2026-08-10 03:20 — Phase 5 : analyse de puissance (scripts/power_analysis.py)
+- σ semestriel empirique 2,146 (IC95 [1,42 ; 4,37]) ; σ théorique iid √2 ; ratio 1,52.
+- **SR vrai 0,5 → 57 ans requis** (unilatéral 5 %, puissance 80 %) ; 72 ans bilatéral ;
+  25 ans même en iid idéal ; fourchette 25–236 ans selon l'IC sur σ.
+- Notre banc (8 semestres) ne peut détecter qu'un SR vrai ≥ 1,89 (1,24 en iid).
+- Conclusion transférable : sur cet univers (10 paires corrélées, long-only, 4 ans),
+  la détection d'un edge réaliste est empiriquement indécidable ; le levier est la
+  largeur (nombre de paris faiblement corrélés), pas la durée.
+
+## 2026-08-10 03:35 — Phase 5 : livrables produits
+- RAPPORT.md : verdict binaire NON en tête, sans atténuation ; traçabilité ; tableau
+  complet des 7 candidates (jamais de rendement isolé) ; prédictions vs réalisations ;
+  walk-forward ; puissance ; évaluation FreqAI (non retenu) ; limites et biais
+  résiduels ; clôture.
+- dashboard.html : autonome (aucune dépendance externe), thèmes clair/sombre, palette
+  validée (validate_palette.js PASS dans les deux modes), graphique walk-forward avec
+  libellés directs + tooltips, tableaux avec chiffres tabulaires. Rendu vérifié via
+  serveur local (page charge, zéro erreur console) ; capture d'écran impossible
+  (panneau navigateur non affiché côté client) — vérification structurelle substituée.
+- data/metrics/power_analysis.json ajouté aux artefacts mécaniques.
+
+## 2026-08-10 03:40 — CYCLE 1 CLOS
+- Verdict final : NON — aucune candidate ne bat le benchmark en rendement ajusté du
+  drawdown après correction pour N=7 essais. Terminaison réussie du protocole.
+- Jeu scellé 2025-01 → 2026-06 : VIERGE (jamais téléchargé, jamais mesuré). Disponible
+  pour un éventuel cycle 2 pré-enregistré.
+- dry_run: true ; aucune clé API ; le passage en réel reste hors périmètre (Point de
+  blocage 2, décision humaine).
+- Tout nouvel essai exigerait : nouveau registre, nouveau gel, nouveau N, et les
+  conditions de puissance du § 5 du rapport.
+
 ## 2026-08-09 23:59 UTC — Phase 3 : essai A1 (A1DonchianTrend)
 - Calibration 20210101-20240101 puis validation 20240101-20250101, une seule passe chacune, fee 0.0015/côté, detail 5m.
 - Compteur d'essais : 1/7. Exports : user_data/backtest_results/A1_calib.zip, A1_valid.zip. Logs : data/trial_logs/A1_*.log

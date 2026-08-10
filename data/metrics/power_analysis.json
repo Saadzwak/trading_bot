@@ -1,0 +1,50 @@
+{
+  "n_fenêtres": 8,
+  "sharpes_semestriels": [
+    2.4568292421739395,
+    -0.7070423513303384,
+    -4.174285937627622,
+    -2.1377989450313057,
+    0.4521526332213453,
+    0.8060943105935308,
+    0.8976024438388278,
+    1.473226270227391
+  ],
+  "sigma_semestriel_empirique": 2.146499444991209,
+  "sigma_IC95": [
+    1.419209943509008,
+    4.368710413265728
+  ],
+  "sigma_semestriel_théorique_iid": 1.4142135623730951,
+  "ratio_emp_sur_théorique": 1.5178043133664445,
+  "années_pour_SR": {
+    "0.5": {
+      "empirique_unilatéral_5pct": 56.971768648221094,
+      "empirique_bilatéral_5pct": 72.32679675930214,
+      "théorique_iid_unilatéral_5pct": 24.730228928079068
+    },
+    "1.0": {
+      "empirique_unilatéral_5pct": 14.242942162055273,
+      "empirique_bilatéral_5pct": 18.081699189825535,
+      "théorique_iid_unilatéral_5pct": 6.182557232019767
+    },
+    "1.5": {
+      "empirique_unilatéral_5pct": 6.330196516469011,
+      "empirique_bilatéral_5pct": 8.03631075103357,
+      "théorique_iid_unilatéral_5pct": 2.747803214231007
+    },
+    "2.0": {
+      "empirique_unilatéral_5pct": 3.5607355405138184,
+      "empirique_bilatéral_5pct": 4.520424797456384,
+      "théorique_iid_unilatéral_5pct": 1.5456393080049418
+    }
+  },
+  "années_pour_SR05_selon_IC_sigma": {
+    "borne_basse_sigma": 24.905280168859495,
+    "borne_haute_sigma": 235.99600791446738
+  },
+  "SR_détectable_avec_notre_banc_8_semestres": {
+    "empirique_unilatéral_5pct": 1.886991134190571,
+    "théorique_unilatéral_5pct": 1.2432374302621931
+  }
+}

@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Banc de recherche — Cycle 1 (clos)</title>
+<style>
+  :root {
+    color-scheme: light;
+    --page: #f9f9f7; --surface: #fcfcfb;
+    --ink: #0b0b0b; --ink-2: #52514e; --muted: #898781;
+    --grid: #e1e0d9; --baseline: #c3c2b7; --border: rgba(11,11,11,.10);
+    --pos: #2a78d6; --neg: #e34948;
+    --critical: #d03b3b; --good: #006300;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:where(:not([data-theme="light"])) {
+      color-scheme: dark;
+      --page: #0d0d0d; --surface: #1a1a19;
+      --ink: #ffffff; --ink-2: #c3c2b7; --muted: #898781;
+      --grid: #2c2c2a; --baseline: #383835; --border: rgba(255,255,255,.10);
+      --pos: #3987e5; --neg: #e66767;
+      --critical: #d03b3b; --good: #0ca30c;
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --page: #0d0d0d; --surface: #1a1a19;
+    --ink: #ffffff; --ink-2: #c3c2b7; --muted: #898781;
+    --grid: #2c2c2a; --baseline: #383835; --border: rgba(255,255,255,.10);
+    --pos: #3987e5; --neg: #e66767;
+    --critical: #d03b3b; --good: #0ca30c;
+  }
+  * { box-sizing: border-box; margin: 0; }
+  body {
+    background: var(--page); color: var(--ink);
+    font: 15px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif;
+    padding: 32px 16px 64px;
+  }
+  main { max-width: 980px; margin: 0 auto; display: grid; gap: 20px; }
+  .card {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 10px; padding: 20px 24px; overflow-x: auto;
+  }
+  h1 { font-size: 20px; font-weight: 650; }
+  h2 { font-size: 15px; font-weight: 650; margin-bottom: 12px; }
+  .sub { color: var(--ink-2); font-size: 13px; margin-top: 4px; }
+  .verdict-line { display: flex; flex-wrap: wrap; gap: 10px 24px; margin-top: 14px; }
+  .verdict-badge {
+    display: inline-flex; align-items: center; gap: 8px;
+    border: 1.5px solid var(--critical); color: var(--critical);
+    border-radius: 8px; padding: 6px 14px; font-weight: 700; font-size: 16px;
+  }
+  .seal { color: var(--good); font-weight: 600; font-size: 13px; }
+  .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; }
+  .tile { border: 1px solid var(--border); border-radius: 8px; padding: 12px 14px; }
+  .tile .v { font-size: 26px; font-weight: 650; }
+  .tile .l { color: var(--ink-2); font-size: 12.5px; margin-top: 2px; }
+  table { border-collapse: collapse; width: 100%; font-size: 13.5px; }
+  th, td { padding: 6px 10px; text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  th { color: var(--muted); font-weight: 550; border-bottom: 1px solid var(--baseline); }
+  td:first-child, th:first-child { text-align: left; }
+  tr.bench td { border-top: 1px solid var(--baseline); color: var(--ink-2); }
+  td.fail { color: var(--critical); font-weight: 650; }
+  .note { color: var(--ink-2); font-size: 13px; margin-top: 10px; }
+  svg text { font: 12px system-ui, sans-serif; }
+  #tip {
+    position: fixed; display: none; pointer-events: none; z-index: 10;
+    background: var(--surface); border: 1px solid var(--border); border-radius: 6px;
+    padding: 6px 10px; font-size: 12.5px; color: var(--ink);
+    box-shadow: 0 2px 10px rgba(0,0,0,.15);
+  }
+  footer { color: var(--muted); font-size: 12px; text-align: center; }
+  code { font-size: 12px; }
+</style>
+</head>
+<body>
+<main>
+
+  <section class="card">
+    <h1>Banc de recherche systématique — Cycle 1 (clos le 2026-08-10)</h1>
+    <div class="sub">Freqtrade · Binance spot dry-run · 10 paires USDT figées (déc. 2020) · 1h + détail 5m · frais 0,15 %/côté (slippage inclus)</div>
+    <div class="verdict-line">
+      <span class="verdict-badge">✗&nbsp;VERDICT : NON</span>
+      <span class="sub" style="max-width:560px">Aucune candidate ne bat le buy-and-hold en rendement ajusté du drawdown
+      après correction pour N&nbsp;=&nbsp;7 essais. Meilleur DSR : 0,54 (seuil 0,95) · meilleur t d'alpha : 0,8 (seuil 2)
+      · le B&amp;H BTC bat toutes les candidates en Calmar de validation (4,28 vs 3,13).</span>
+    </div>
+    <div class="verdict-line">
+      <span class="seal">✓ Jeu scellé 2025→2026 : NON OUVERT, resté vierge (jamais téléchargé)</span>
+      <span class="seal">✓ dry_run: true · aucune clé API</span>
+      <span class="seal">✓ Pré-enregistrement : <code>edbb4397</code> · essais 7/7, jamais élargi</span>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Les 7 candidates — validation 2024 (le rendement n'apparaît jamais seul)</h2>
+    <table>
+      <thead><tr>
+        <th>Candidate</th><th>Sharpe calib</th><th>Sharpe valid</th><th>DSR (N=7)</th>
+        <th>Max DD</th><th>Calmar</th><th>β BTC</th><th>α résid. (t)</th>
+        <th>Rdt total</th><th>Trades</th><th>Verdict</th>
+      </tr></thead>
+      <tbody>
+        <tr><td>A1 · Donchian 30j/15j</td><td>1,05</td><td>1,62</td><td>0,541</td><td>−29,4 %</td><td>3,12</td><td>0,41</td><td>+39,1 % (0,8)</td><td>+91,7 %</td><td>46</td><td class="fail">✗ ÉCHOUE</td></tr>
+        <tr><td>A2 · TSMOM 90j</td><td>0,80</td><td>1,55</td><td>0,512</td><td>−31,1 %</td><td>3,13</td><td>0,59</td><td>+28,9 % (0,6)</td><td>+97,1 %</td><td>350</td><td class="fail">✗ ÉCHOUE</td></tr>
+        <tr><td>A3 · TSMOM + vol target</td><td>0,58</td><td>1,52</td><td>0,497</td><td>−26,7 %</td><td>3,02</td><td>0,48</td><td>+26,9 % (0,6)</td><td>+80,7 %</td><td>434</td><td class="fail">✗ ÉCHOUE</td></tr>
+        <tr><td>B1 · XS momentum 21j</td><td>1,11</td><td>0,61</td><td>0,182</td><td>−43,6 %</td><td>0,47</td><td>0,58</td><td>−17,6 % (−0,4)</td><td>+20,6 %</td><td>49</td><td class="fail">✗ ÉCHOUE</td></tr>
+        <tr><td>B2 · XS momentum 7j</td><td>0,91</td><td>0,72</td><td>0,206</td><td>−51,3 %</td><td>0,53</td><td>0,52</td><td>−8,1 % (−0,2)</td><td>+27,4 %</td><td>71</td><td class="fail">✗ ÉCHOUE</td></tr>
+        <tr><td>C1 · Choc liq., mean-revert</td><td>−1,00</td><td>−0,62</td><td>0,014</td><td>−8,7 %</td><td>−0,43</td><td>0,01</td><td>−4,2 % (−0,5)</td><td>−3,7 %</td><td>117</td><td class="fail">✗ ÉCHOUE</td></tr>
+        <tr><td>C2 · Choc liq., sortie fixe</td><td>−1,00</td><td>−1,12</td><td>0,001</td><td>−6,0 %</td><td>−0,82</td><td>0,01</td><td>−5,5 % (−1,1)</td><td>−5,0 %</td><td>118</td><td class="fail">✗ ÉCHOUE</td></tr>
+        <tr class="bench"><td>Benchmark B&amp;H équipondéré</td><td>0,75</td><td>1,27</td><td>—</td><td>−42,1 %</td><td>1,94</td><td>—</td><td>—</td><td>+81,7 %</td><td>—</td><td>—</td></tr>
+        <tr class="bench"><td>Benchmark B&amp;H BTC</td><td>0,51</td><td>1,68</td><td>—</td><td>−26,2 %</td><td>4,28</td><td>—</td><td>—</td><td>+111,8 %</td><td>—</td><td>—</td></tr>
+      </tbody>
+    </table>
+    <div class="note">Critères gelés (tous requis) : Calmar &gt; B&amp;H équipondéré · DSR ≥ 0,95 · alpha résiduel t ≥ 2 · Sharpe valid ≥ 50 % du Sharpe calib.
+    La famille A échoue sur DSR et alpha ; B sur Calmar, DSR et alpha ; C sur tout.</div>
+  </section>
+
+  <section class="card">
+    <h2>Walk-forward A2 — Sharpe par semestre (la métrique la plus importante)</h2>
+    <svg viewBox="0 0 760 268" width="100%" role="img"
+         aria-label="Sharpe semestriel de A2 : 2,46 puis -0,71, -4,17, -2,14, 0,45, 0,81, 0,90, 1,47">
+      <g stroke="var(--grid)" stroke-width="1">
+        <line x1="52" y1="54"  x2="740" y2="54"/>
+        <line x1="52" y1="150" x2="740" y2="150"/>
+        <line x1="52" y1="198" x2="740" y2="198"/>
+      </g>
+      <line x1="52" y1="102" x2="740" y2="102" stroke="var(--baseline)" stroke-width="1.5"/>
+      <g fill="var(--muted)" text-anchor="end">
+        <text x="46" y="58">+2</text><text x="46" y="106">0</text>
+        <text x="46" y="154">−2</text><text x="46" y="202">−4</text>
+      </g>
+      <!-- barres : y(v) = 102 − v·24 ; largeur 44 ; pas 86 -->
+      <g id="bars">
+        <rect x="68"  y="43"  width="44" height="59"  rx="3" fill="var(--pos)" data-t="2021H1 · Sharpe +2,46 · rdt +178,7 % · B&amp;H +213,6 %"/>
+        <rect x="154" y="102" width="44" height="17"  rx="3" fill="var(--neg)" data-t="2021H2 · Sharpe −0,71 · rdt −25,0 % · B&amp;H +23,4 %"/>
+        <rect x="240" y="102" width="44" height="100" rx="3" fill="var(--neg)" data-t="2022H1 · Sharpe −4,17 · rdt −22,2 % · B&amp;H −67,2 %"/>
+        <rect x="326" y="102" width="44" height="51"  rx="3" fill="var(--neg)" data-t="2022H2 · Sharpe −2,14 · rdt −25,4 % · B&amp;H −7,6 %"/>
+        <rect x="412" y="91"  width="44" height="11"  rx="3" fill="var(--pos)" data-t="2023H1 · Sharpe +0,45 · rdt +5,2 % · B&amp;H +61,6 %"/>
+        <rect x="498" y="83"  width="44" height="19"  rx="3" fill="var(--pos)" data-t="2023H2 · Sharpe +0,81 · rdt +12,8 % · B&amp;H +39,7 %"/>
+        <rect x="584" y="80"  width="44" height="22"  rx="3" fill="var(--pos)" data-t="2024H1 · Sharpe +0,90 · rdt +17,9 % · B&amp;H +11,8 %"/>
+        <rect x="670" y="67"  width="44" height="35"  rx="3" fill="var(--pos)" data-t="2024H2 · Sharpe +1,47 · rdt +33,2 % · B&amp;H +86,5 %"/>
+      </g>
+      <g fill="var(--ink-2)" text-anchor="middle" font-weight="600">
+        <text x="90"  y="37">+2,46</text><text x="176" y="133">−0,71</text>
+        <text x="262" y="216">−4,17</text><text x="348" y="167">−2,14</text>
+        <text x="434" y="85">+0,45</text><text x="520" y="77">+0,81</text>
+        <text x="606" y="74">+0,90</text><text x="692" y="61">+1,47</text>
+      </g>
+      <g fill="var(--muted)" text-anchor="middle">
+        <text x="90"  y="240">2021H1</text><text x="176" y="240">2021H2</text>
+        <text x="262" y="240">2022H1</text><text x="348" y="240">2022H2</text>
+        <text x="434" y="240">2023H1</text><text x="520" y="240">2023H2</text>
+        <text x="606" y="240">2024H1</text><text x="692" y="240">2024H2</text>
+      </g>
+      <text x="52" y="262" fill="var(--muted)">Moyenne −0,12 · médiane 0,63 · σ 2,15 · 5/8 positives — le Sharpe 1,55 de la validation 2024 est un tirage de régime, pas une propriété stable.</text>
+    </svg>
+    <div class="note">Stress de frais (A2, validation 2024) : Sharpe 1,55 à 0,15 %/côté → 1,50 à 0,20 % → 1,46 à 0,25 %. L'absence d'edge n'est pas cachée dans les coûts.</div>
+  </section>
+
+  <section class="card">
+    <h2>Puissance statistique du dispositif — le résultat le plus transférable</h2>
+    <div class="tiles">
+      <div class="tile"><div class="v">57 ans</div><div class="l">de données nécessaires pour détecter un Sharpe vrai de 0,5 à 80 % de puissance (σ semestriel 2,15, unilatéral 5 %)</div></div>
+      <div class="tile"><div class="v">25 ans</div><div class="l">même sous l'hypothèse iid idéale (σ = √2) — l'histoire crypto exploitable en fait ~10</div></div>
+      <div class="tile"><div class="v">SR ≥ 1,89</div><div class="l">seul niveau d'edge que notre banc de 8 semestres peut détecter — les effets réalistes (0,3–0,8) sont hors de portée</div></div>
+      <div class="tile"><div class="v">×1,52</div><div class="l">excès du σ observé sur le σ iid : la dépendance de régime dégrade la puissance au-delà du bruit pur</div></div>
+    </div>
+    <table style="margin-top:14px">
+      <thead><tr><th>Sharpe vrai</th><th>Années requises (σ emp., unilat.)</th><th>bilatéral</th><th>théorique iid</th></tr></thead>
+      <tbody>
+        <tr><td>0,5</td><td>57,0</td><td>72,3</td><td>24,7</td></tr>
+        <tr><td>1,0</td><td>14,2</td><td>18,1</td><td>6,2</td></tr>
+        <tr><td>1,5</td><td>6,3</td><td>8,0</td><td>2,7</td></tr>
+        <tr><td>2,0</td><td>3,6</td><td>4,5</td><td>1,5</td></tr>
+      </tbody>
+    </table>
+    <div class="note">IC95 sur σ (8 fenêtres) : [1,42 ; 4,37] → pour SR = 0,5, la fourchette va de 25 à 236 ans.
+    Conclusion : sur ces données et cette largeur (10 paires corrélées, long-only), la question « Sharpe vrai = 0,5 ? » est empiriquement indécidable.
+    Les leviers réels : élargir la largeur (centaines de paris faiblement corrélés), pas la durée.</div>
+  </section>
+
+  <footer>
+    Pré-enregistrement <code>edbb4397a790702046dad47dd1bc034e379e25fc</code> · N = 7 essais (gelé, consommé 7/7) ·
+    scellé 2025→2026 vierge · dry_run permanent · généré depuis data/metrics/*.json — voir RAPPORT.md pour les limites et biais résiduels
+  </footer>
+</main>
+
+<div id="tip"></div>
+<script>
+  const tip = document.getElementById("tip");
+  for (const r of document.querySelectorAll("#bars rect")) {
+    r.addEventListener("mousemove", e => {
+      tip.textContent = r.dataset.t;
+      tip.style.display = "block";
+      tip.style.left = Math.min(e.clientX + 14, innerWidth - 280) + "px";
+      tip.style.top = (e.clientY + 14) + "px";
+    });
+    r.addEventListener("mouseleave", () => tip.style.display = "none");
+  }
+</script>
+</body>
+</html>
