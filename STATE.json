@@ -1,10 +1,11 @@
 {
-  "phase": 3,
-  "sous_étape": "3.1 essais en cours (ordre A1→C2, runner autonome)",
+  "phase": 4,
+  "sous_étape": "TERMINÉE — arrêt au Point de blocage 1, en attente de décision utilisateur sur le scellé",
   "essais_consommés": 7,
   "essais_budget": 7,
   "jeu_scellé_ouvert": false,
   "hash_commit_gel": "edbb4397a790702046dad47dd1bc034e379e25fc",
-  "dernière_action": "2026-08-10 00:15 UTC — essai C2 exécuté (calibration + validation, une passe)",
-  "prochaine_action": "essai suivant dans l'ordre du registre, puis métriques agrégées après le 7e essai"
+  "candidate_finale_mécanique": "A2 (TSMOM 90j) — sélection par Calmar validation (3,13), aucun critère gelé franchi",
+  "dernière_action": "2026-08-10 02:42 — Phase 4 close (walk-forward 8 fenêtres + stress frais), audits OK, boucle autonome arrêtée",
+  "prochaine_action": "ATTENTE UTILISATEUR (Point de blocage 1) : décider d'ouvrir ou non le scellé 2025-2026 ; recommandation = ne pas ouvrir ; ensuite Phase 5 rapport final + dashboard"
 }

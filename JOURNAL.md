@@ -220,6 +220,40 @@ y compris les erreurs.
   sélection, ne compte pas au dénominateur (aucune alternative comparée).
 - FreqAI : évaluation au rapport (sans implémentation) — hors budget de ce cycle.
 
+## 2026-08-10 02:40 — Phase 4 terminée : walk-forward A2, 8 fenêtres semestrielles + stress de frais
+- Sharpe par fenêtre : 2021H1 +2,46 · 2021H2 −0,71 · 2022H1 −4,17 · 2022H2 −2,14 ·
+  2023H1 +0,45 · 2023H2 +0,81 · 2024H1 +0,90 · 2024H2 +1,47.
+- Synthèse : moyenne −0,12 · médiane 0,63 · min −4,17 · σ 2,15 · 5/8 positives.
+- **Lecture honnête — la métrique la plus importante du projet** : la performance de
+  A2 est massivement dépendante du régime. Le Sharpe 1,55 de la validation 2024 est un
+  TIRAGE dans une distribution semestrielle de moyenne ≈ 0 et d'écart-type 2,15 — pas
+  une propriété stable de la règle. En 2021H2-2022 (range puis bear), la règle long-only
+  a perdu 22-25 % par semestre en achetant les faux rebonds, alors que « cash » était
+  disponible. L'amélioration calibration→validation reflète un régime 2024 favorable,
+  pas une compétence émergente.
+- Stress de frais (validation, A2 seule) : Sharpe 1,55 → 1,50 (20 bps) → 1,46 (25 bps).
+  Rendement 97 % → 94 % → 90 %. Faible sensibilité aux coûts : l'edge éventuel n'est
+  pas un artefact de sous-estimation des frais.
+- Aucun essai ajouté (diagnostics à règles gelées sur la candidate déjà sélectionnée).
+
+## 2026-08-10 02:41 — AUTO-AUDIT de fin de Phase 4
+- ☑ Compteur d'essais 7/7 == budget gelé (walk-forward = 0 essai).
+- ☑ HYPOTHESES.md inchangé depuis edbb439 (git diff vide).
+- ☑ Scellé intact (fenêtres ≤ 2024-12-31, assertion codée, données 2025+ absentes).
+- ☑ Aucune candidate modifiée après résultats.
+- ☑ Pas de nouveau look-ahead (walk-forward = mêmes stratégies, mêmes données).
+
+## 2026-08-10 02:42 — ARRÊT AU POINT DE BLOCAGE 1 (conforme au protocole)
+- Le jeu scellé 2025→2026 n'a PAS été touché (il n'est même pas téléchargé).
+- Présentation à l'utilisateur : candidate finale mécanique A2, compteur 7/7, hash de
+  gel edbb4397a790702046dad47dd1bc034e379e25fc, résultats de validation complets,
+  walk-forward, stress de frais.
+- **Recommandation formulée : NE PAS ouvrir le scellé.** Aucune candidate ne franchit
+  les critères gelés ; le scellé est à usage unique et le brûler pour documenter un
+  résultat déjà négatif après correction serait un gaspillage — il resterait
+  disponible pour un futur cycle pré-enregistré. La décision appartient à l'utilisateur.
+- La boucle autonome s'arrête ici. Reprise uniquement sur instruction explicite.
+
 ## 2026-08-09 23:59 UTC — Phase 3 : essai A1 (A1DonchianTrend)
 - Calibration 20210101-20240101 puis validation 20240101-20250101, une seule passe chacune, fee 0.0015/côté, detail 5m.
 - Compteur d'essais : 1/7. Exports : user_data/backtest_results/A1_calib.zip, A1_valid.zip. Logs : data/trial_logs/A1_*.log
