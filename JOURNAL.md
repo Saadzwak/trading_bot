@@ -292,6 +292,38 @@ y compris les erreurs.
 - Tout nouvel essai exigerait : nouveau registre, nouveau gel, nouveau N, et les
   conditions de puissance du § 5 du rapport.
 
+## 2026-08-10 14:30 — NOUVELLE PHASE : test opérationnel 50 € (décision utilisateur)
+- Statut assumé et documenté (README.md) : test opérationnel de la chaîne
+  d'exécution, PAS stratégie validée — le cycle 1 a conclu à l'absence d'edge
+  démontré. Livrable principal : le taux de divergence (scripts/reconcile.py).
+- **Périmètre réaffirmé (Point de blocage 2 + règles de l'assistant)** : je ne
+  configure jamais la clé API réelle, je ne la vois jamais, je ne passe jamais
+  dry_run à false, je ne démarre jamais le bot en réel. Ces gestes appartiennent à
+  l'utilisateur, après checklist vérifiée.
+- Checklist sécurité : SECURITE_CLES_API.md + scripts/check_api_permissions.py
+  (exécuté par l'utilisateur ; vérifie retraits OFF, trading spot ON, IP whitelist
+  ON, transferts/margin/futures OFF). Capture d'écran + sortie du script exigées
+  avant tout démarrage réel. Les clés ne transitent jamais par le chat.
+- Filtres réels vérifiés (API publique) : minNotional 5 USDT sur les 10 paires,
+  applicable aux ordres market → sizing dévié : 4 positions × 12 USDT au lieu de
+  10 × 1/10 — documenté dans DEVIATION.md avec le poids annuel des frais estimé à
+  **7–15 % du capital/an**.
+- **Kill-switch −20 % définitif : SELFTEST OK** (déclenchement exact au plancher,
+  stop unique, fichier de verrouillage, redémarrage refusé). Watchdog actif en
+  continu (plancher 43,20 USDT sur wallet dry-run 54).
+- Dry-run continu LANCÉ : A2Tsmom90, FreqUI sur http://127.0.0.1:8080 (secrets
+  locaux dans .env, hors dépôt), export quotidien data/live/export_*.json (démon
+  15 min), Telegram prêt (activation par l'utilisateur via .env), logs complets
+  des ordres (freqtrade + exports).
+- Réconciliation : fenêtre évaluée ≥ 2026-08-10 uniquement ; les bougies
+  antérieures ne servent que de warm-up. La fenêtre scellée 2025-01→2026-06 n'est
+  toujours JAMAIS évaluée.
+- **Limites fixées à froid, consignées en mémoire persistante** : aucun
+  réapprovisionnement (perte du capital = arrêt du test) ; ne jamais proposer
+  d'augmenter le capital ; si l'utilisateur demande d'ajouter des fonds après une
+  perte, refuser et rappeler que cette limite a été fixée à froid. Aucune
+  modification de stratégie en cours de run.
+
 ## 2026-08-09 23:59 UTC — Phase 3 : essai A1 (A1DonchianTrend)
 - Calibration 20210101-20240101 puis validation 20240101-20250101, une seule passe chacune, fee 0.0015/côté, detail 5m.
 - Compteur d'essais : 1/7. Exports : user_data/backtest_results/A1_calib.zip, A1_valid.zip. Logs : data/trial_logs/A1_*.log

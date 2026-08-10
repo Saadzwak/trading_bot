@@ -1,0 +1,72 @@
+{
+  "BTCUSDT": {
+    "minNotional": "5.00000000",
+    "applyMinToMarket": true,
+    "stepSize": "0.00001000",
+    "tickSize": "0.01000000",
+    "status": "TRADING"
+  },
+  "ETHUSDT": {
+    "minNotional": "5.00000000",
+    "applyMinToMarket": true,
+    "stepSize": "0.00010000",
+    "tickSize": "0.01000000",
+    "status": "TRADING"
+  },
+  "BNBUSDT": {
+    "minNotional": "5.00000000",
+    "applyMinToMarket": true,
+    "stepSize": "0.00100000",
+    "tickSize": "0.01000000",
+    "status": "TRADING"
+  },
+  "LTCUSDT": {
+    "minNotional": "5.00000000",
+    "applyMinToMarket": true,
+    "stepSize": "0.00100000",
+    "tickSize": "0.01000000",
+    "status": "TRADING"
+  },
+  "ADAUSDT": {
+    "minNotional": "5.00000000",
+    "applyMinToMarket": true,
+    "stepSize": "0.10000000",
+    "tickSize": "0.00010000",
+    "status": "TRADING"
+  },
+  "XRPUSDT": {
+    "minNotional": "5.00000000",
+    "applyMinToMarket": true,
+    "stepSize": "0.10000000",
+    "tickSize": "0.00010000",
+    "status": "TRADING"
+  },
+  "XLMUSDT": {
+    "minNotional": "5.00000000",
+    "applyMinToMarket": true,
+    "stepSize": "1.00000000",
+    "tickSize": "0.00010000",
+    "status": "TRADING"
+  },
+  "LINKUSDT": {
+    "minNotional": "5.00000000",
+    "applyMinToMarket": true,
+    "stepSize": "0.01000000",
+    "tickSize": "0.00100000",
+    "status": "TRADING"
+  },
+  "BCHUSDT": {
+    "minNotional": "5.00000000",
+    "applyMinToMarket": true,
+    "stepSize": "0.00100000",
+    "tickSize": "0.10000000",
+    "status": "TRADING"
+  },
+  "GRTUSDT": {
+    "minNotional": "5.00000000",
+    "applyMinToMarket": true,
+    "stepSize": "1.00000000",
+    "tickSize": "0.00001000",
+    "status": "TRADING"
+  }
+}

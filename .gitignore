@@ -12,6 +12,13 @@ data/raw/
 *.zip
 *.feather
 
+# Secrets et exécution live/dry-run — JAMAIS committés
+.env
+data/live/
+user_data/*.sqlite*
+user_data/logs/
+KILLSWITCH_TRIPPED
+
 # Divers
 .pytest_cache/
 *.log

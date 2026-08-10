@@ -1,0 +1,83 @@
+{
+  "bot_name": "banc_a2_test_operationnel",
+  "dry_run": true,
+  "dry_run_wallet": 54,
+  "trading_mode": "spot",
+  "margin_mode": "",
+  "stake_currency": "USDT",
+  "stake_amount": 12,
+  "max_open_trades": 4,
+  "timeframe": "1h",
+  "cancel_open_orders_on_exit": true,
+  "dataformat_ohlcv": "feather",
+  "user_data_dir": "./user_data",
+  "exchange": {
+    "name": "binance",
+    "key": "",
+    "secret": "",
+    "ccxt_config": {},
+    "ccxt_async_config": {},
+    "pair_whitelist": [
+      "BTC/USDT", "ETH/USDT", "XRP/USDT", "LTC/USDT", "GRT/USDT",
+      "BCH/USDT", "LINK/USDT", "BNB/USDT", "ADA/USDT", "XLM/USDT"
+    ],
+    "pair_blacklist": []
+  },
+  "pairlists": [
+    { "method": "StaticPairList" }
+  ],
+  "entry_pricing": {
+    "price_side": "other",
+    "use_order_book": true,
+    "order_book_top": 1,
+    "price_last_balance": 0.0,
+    "check_depth_of_market": { "enabled": false, "bids_to_ask_delta": 1 }
+  },
+  "exit_pricing": {
+    "price_side": "other",
+    "use_order_book": true,
+    "order_book_top": 1
+  },
+  "order_types": {
+    "entry": "market",
+    "exit": "market",
+    "stoploss": "market",
+    "stoploss_on_exchange": false
+  },
+  "unfilledtimeout": {
+    "entry": 10,
+    "exit": 10,
+    "unit": "minutes"
+  },
+  "telegram": {
+    "enabled": false,
+    "token": "",
+    "chat_id": "",
+    "notification_settings": {
+      "status": "on",
+      "warning": "on",
+      "startup": "on",
+      "entry": "on",
+      "exit": "on",
+      "entry_fill": "on",
+      "exit_fill": "on",
+      "entry_cancel": "on",
+      "exit_cancel": "on"
+    }
+  },
+  "api_server": {
+    "enabled": true,
+    "listen_ip_address": "127.0.0.1",
+    "listen_port": 8080,
+    "verbosity": "error",
+    "enable_openapi": false,
+    "jwt_secret_key": "OVERRIDE_VIA_ENV",
+    "CORS_origins": [],
+    "username": "banc",
+    "password": "OVERRIDE_VIA_ENV"
+  },
+  "initial_state": "running",
+  "internals": {
+    "process_throttle_secs": 5
+  }
+}
