@@ -1,10 +1,10 @@
 {
   "phase": 3,
   "sous_étape": "3.1 essais en cours (ordre A1→C2, runner autonome)",
-  "essais_consommés": 0,
+  "essais_consommés": 7,
   "essais_budget": 7,
   "jeu_scellé_ouvert": false,
   "hash_commit_gel": "edbb4397a790702046dad47dd1bc034e379e25fc",
-  "dernière_action": "2026-08-10 02:16 — vérifications anti-biais closes (A/C : no bias ; B : faux positif structurel démontré + test causalité dédié OK) ; run_trials.py lancé",
-  "prochaine_action": "attendre la fin des 7 essais (le runner incrémente le compteur et journalise) ; puis compute_metrics.py ; puis Phase 4 walk-forward sur la meilleure candidate en validation"
+  "dernière_action": "2026-08-10 00:15 UTC — essai C2 exécuté (calibration + validation, une passe)",
+  "prochaine_action": "essai suivant dans l'ordre du registre, puis métriques agrégées après le 7e essai"
 }

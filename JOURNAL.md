@@ -168,3 +168,89 @@ y compris les erreurs.
   chacune, fee 0,0015/côté, --timeframe-detail 5m, exports + logs par essai.
 - Les résultats ne seront pas consultés avant la fin du 7e essai (métriques agrégées).
 - Garde anti-scellé active (aucune donnée 2025+ sur disque + assertion dans le runner).
+- Note : premier lancement avorté (redirection de log vers un dossier inexistant, aucune
+  incidence — aucun backtest n'avait démarré) ; relancé après mkdir.
+
+## 2026-08-10 02:20 — Phase 3 : les 14 backtests exécutés (7 essais, une passe chacun)
+- Déviation technique : freqtrade a ignoré --export-filename et écrit des exports
+  horodatés ; mappage mécanique vers {id}_{phase}.zip via les .meta.json (stratégie +
+  timerange), copies conservées à côté des originaux. Aucun re-run.
+- Fait notable : la borne de validation dans les metas est 2024-12-31 23:00 — le moteur
+  a recadré sur la dernière donnée disponible, confirmant l'absence physique de 2025+.
+
+## 2026-08-10 02:25 — Phase 3 : MÉTRIQUES AGRÉGÉES (première consultation des résultats)
+- data/metrics/METRIQUES.md + metrics_summary.json. Résumé (validation 2024, N=7) :
+  - A1 : Sharpe 1,62 · DSR 0,541 · Calmar 3,12 · α 39,1 %/an (t=0,8) · ÉCHOUE
+  - A2 : Sharpe 1,55 · DSR 0,512 · Calmar 3,13 · α 28,9 %/an (t=0,6) · ÉCHOUE
+  - A3 : Sharpe 1,52 · DSR 0,497 · Calmar 3,02 · α 26,9 %/an (t=0,6) · ÉCHOUE
+  - B1 : Sharpe 0,61 · DSR 0,182 · Calmar 0,47 · α négatif · ÉCHOUE
+  - B2 : Sharpe 0,72 · DSR 0,206 · Calmar 0,53 · α négatif · ÉCHOUE
+  - C1 : Sharpe −0,62 · DSR 0,014 · rendement −3,7 % · ÉCHOUE
+  - C2 : Sharpe −1,12 · DSR 0,001 · rendement −5,0 % · ÉCHOUE
+  - Benchmark équipondéré validation : Sharpe 1,27 · Calmar 1,94 · +81,7 %.
+- **AUCUNE candidate ne franchit les 4 critères gelés.** Terminaison valide du
+  protocole, conforme à la prédiction possible « rien ne survit à la correction ».
+- Lecture : la famille A bat le B&H en rendement ajusté du drawdown (Calmar 3,0+ vs
+  1,94, max DD moitié moindre) et S'AMÉLIORE hors échantillon (pas de signature de
+  sur-ajustement), mais le DSR ~0,5 dit qu'avec 7 essais et 365 jours, ce Sharpe est
+  indiscernable de la chance de sélection ; l'alpha vs BTC n'est pas significatif.
+  B confirme l'érosion documentée (Phase 1). C confirme que les frais tuent le reversal.
+- Aucune candidate n'a été modifiée après consultation de ces résultats, et aucune ne
+  le sera. Le compteur d'essais est CLOS à 7/7.
+
+## 2026-08-10 02:26 — AUTO-AUDIT de fin de Phase 3 (checklist complète)
+- ☑ Compteur d'essais (7) == budget gelé (7).
+- ☑ HYPOTHESES.md inchangé depuis le commit de gel (git diff edbb439..HEAD vide).
+- ☑ Jeu scellé intact : dernière bougie sur disque = 2024-12-31 23:00/23:55 UTC pour
+  toutes les paires vérifiées ; aucune donnée 2025+ n'existe.
+- ☑ Aucune candidate modifiée post-résultat (correctif B1/B2 antérieur à tout essai).
+- ☑ Look-ahead : analyses passées + vérification causale dédiée ; survivorship :
+  univers daté source archivale ; fuite entre jeux : timeranges disjoints, scellé absent.
+
+## 2026-08-10 02:27 — Phase 4 : sélection mécanique et lancement du walk-forward
+- Critère primaire enregistré (rendement ajusté du drawdown en validation = Calmar) :
+  **A2 sélectionnée** (3,13). A1 est à 3,12 — écart dans le bruit, documenté : la
+  sélection reste mécanique, pas de choix discrétionnaire.
+- Walk-forward : 8 fenêtres semestrielles 2021-H1 → 2024-H2, chacune backtestée
+  isolément (startup hors fenêtre, règles gelées, fee 0,0015, detail 5m). Métrique
+  principale : dispersion et pire fenêtre — la DÉGRADATION est déjà mesurée (calib vs
+  valid) et A2 s'améliore OOS.
+- Stress de frais sur A2 SEULE (décision du 01:45) : validation à 0,0020 et 0,0025
+  par côté. Test de robustesse de la candidate déjà sélectionnée — ne crée pas de
+  sélection, ne compte pas au dénominateur (aucune alternative comparée).
+- FreqAI : évaluation au rapport (sans implémentation) — hors budget de ce cycle.
+
+## 2026-08-09 23:59 UTC — Phase 3 : essai A1 (A1DonchianTrend)
+- Calibration 20210101-20240101 puis validation 20240101-20250101, une seule passe chacune, fee 0.0015/côté, detail 5m.
+- Compteur d'essais : 1/7. Exports : user_data/backtest_results/A1_calib.zip, A1_valid.zip. Logs : data/trial_logs/A1_*.log
+- Résultats non consultés à ce stade (métriques calculées après les 7 essais).
+
+## 2026-08-10 00:04 UTC — Phase 3 : essai A2 (A2Tsmom90)
+- Calibration 20210101-20240101 puis validation 20240101-20250101, une seule passe chacune, fee 0.0015/côté, detail 5m.
+- Compteur d'essais : 2/7. Exports : user_data/backtest_results/A2_calib.zip, A2_valid.zip. Logs : data/trial_logs/A2_*.log
+- Résultats non consultés à ce stade (métriques calculées après les 7 essais).
+
+## 2026-08-10 00:09 UTC — Phase 3 : essai A3 (A3Tsmom90VolTarget)
+- Calibration 20210101-20240101 puis validation 20240101-20250101, une seule passe chacune, fee 0.0015/côté, detail 5m.
+- Compteur d'essais : 3/7. Exports : user_data/backtest_results/A3_calib.zip, A3_valid.zip. Logs : data/trial_logs/A3_*.log
+- Résultats non consultés à ce stade (métriques calculées après les 7 essais).
+
+## 2026-08-10 00:11 UTC — Phase 3 : essai B1 (B1XsMomentum21d)
+- Calibration 20210101-20240101 puis validation 20240101-20250101, une seule passe chacune, fee 0.0015/côté, detail 5m.
+- Compteur d'essais : 4/7. Exports : user_data/backtest_results/B1_calib.zip, B1_valid.zip. Logs : data/trial_logs/B1_*.log
+- Résultats non consultés à ce stade (métriques calculées après les 7 essais).
+
+## 2026-08-10 00:13 UTC — Phase 3 : essai B2 (B2XsMomentum7d)
+- Calibration 20210101-20240101 puis validation 20240101-20250101, une seule passe chacune, fee 0.0015/côté, detail 5m.
+- Compteur d'essais : 5/7. Exports : user_data/backtest_results/B2_calib.zip, B2_valid.zip. Logs : data/trial_logs/B2_*.log
+- Résultats non consultés à ce stade (métriques calculées après les 7 essais).
+
+## 2026-08-10 00:15 UTC — Phase 3 : essai C1 (C1LiquidityShockRevert)
+- Calibration 20210101-20240101 puis validation 20240101-20250101, une seule passe chacune, fee 0.0015/côté, detail 5m.
+- Compteur d'essais : 6/7. Exports : user_data/backtest_results/C1_calib.zip, C1_valid.zip. Logs : data/trial_logs/C1_*.log
+- Résultats non consultés à ce stade (métriques calculées après les 7 essais).
+
+## 2026-08-10 00:15 UTC — Phase 3 : essai C2 (C2LiquidityShockFixed)
+- Calibration 20210101-20240101 puis validation 20240101-20250101, une seule passe chacune, fee 0.0015/côté, detail 5m.
+- Compteur d'essais : 7/7. Exports : user_data/backtest_results/C2_calib.zip, C2_valid.zip. Logs : data/trial_logs/C2_*.log
+- Résultats non consultés à ce stade (métriques calculées après les 7 essais).
