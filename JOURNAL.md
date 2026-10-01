@@ -324,6 +324,26 @@ y compris les erreurs.
   perte, refuser et rappeler que cette limite a été fixée à froid. Aucune
   modification de stratégie en cours de run.
 
+## 2026-10-01 — Publication GitHub publique (demande utilisateur)
+- Note d'état : le bot dry-run et les démons (watchdog, export) se sont arrêtés à la
+  fin de la session du 2026-08-14 (processus liés à la session) — aucun trade depuis.
+- Audit pré-publication : `.env` jamais commité (historique complet vérifié) ; aucun
+  secret dans aucun commit ; aucune clé API (jamais existé) ; `gh` authentifié.
+- Organisation, par NOUVEAUX commits uniquement — **l'historique n'est pas réécrit** :
+  le hash de gel edbb4397 est la preuve d'antériorité du pré-enregistrement et doit
+  rester vérifiable.
+  - reference/HYPOTHESES_MOTEUR.md, SIGNATURES_OVERFIT.md, COMPARAISON_NAUTILUS.md
+    ajoutés au suivi (cités par RAPPORT.md §7, jusque-là sous un .gitignore trop large).
+  - requirements.txt (versions exactes du cycle 1 : freqtrade 2026.7, scipy 1.18.0,
+    statsmodels 0.14.6).
+  - Retrait du suivi : .claude/scheduled_tasks.lock, data/universe/{run,download}_log.txt
+    (chemins locaux ; restent dans l'historique ancien — assumé, le nom d'utilisateur
+    figure de toute façon dans les métadonnées de commit).
+  - README : présentation publique au-dessus de l'avertissement + structure du dépôt.
+- Limite connue de la publication : l'e-mail et le nom d'auteur des commits sont
+  publics (métadonnées git). Les anonymiser exigerait de réécrire l'historique, donc
+  de détruire la chaîne d'audit — refusé.
+
 ## 2026-08-09 23:59 UTC — Phase 3 : essai A1 (A1DonchianTrend)
 - Calibration 20210101-20240101 puis validation 20240101-20250101, une seule passe chacune, fee 0.0015/côté, detail 5m.
 - Compteur d'essais : 1/7. Exports : user_data/backtest_results/A1_calib.zip, A1_valid.zip. Logs : data/trial_logs/A1_*.log

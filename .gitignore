@@ -1,5 +1,11 @@
-# Dépôts de référence (lecture seule, jamais committés)
-reference/
+# Dépôts de référence clonés (lecture seule, jamais committés) —
+# mais les livrables d'analyse .md à la racine de reference/ sont suivis
+# (cités par RAPPORT.md §7)
+reference/*
+!reference/*.md
+
+# Fichiers de session de l'outillage local
+.claude/
 
 # Environnement Python
 .venv/

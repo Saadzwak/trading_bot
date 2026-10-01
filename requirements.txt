@@ -1,0 +1,6 @@
+# Environnement du cycle 1 (Python 3.12.10, Windows, venv natif)
+# Versions exactes utilisées pour tous les backtests et métriques du rapport.
+freqtrade==2026.7
+scipy==1.18.0
+statsmodels==0.14.6
+# ccxt 4.5.71 est installé comme dépendance de freqtrade.

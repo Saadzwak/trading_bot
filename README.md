@@ -1,4 +1,20 @@
-# Banc de recherche trading — statut du projet
+# Banc de recherche trading — pipeline anti-data-mining
+
+Banc de recherche systématique sur Freqtrade (Binance spot, dry-run, 10 paires USDT
+figées en déc. 2020, timeframe 1h) construit pour une seule chose : **distinguer un
+edge réel du bruit de sur-optimisation**. Pré-enregistrement des hypothèses avant
+tout backtest (hash git de gel `edbb4397`), budget d'essais gelé (N=7), Deflated
+Sharpe Ratio, jeu de test 2025–2026 scellé (resté vierge), journal append-only
+erreurs incluses.
+
+**Résultat du cycle 1 : verdict négatif assumé** — aucune des 7 candidates ne bat le
+buy-and-hold en rendement ajusté du drawdown après correction pour comparaisons
+multiples ([RAPPORT.md](RAPPORT.md)). Le résultat le plus transférable est l'analyse
+de puissance statistique : sur cet univers, détecter un Sharpe vrai de 0,5 à 80 % de
+puissance exigerait ~57 ans de données. Ce dépôt est publié comme exemple de
+protocole, pas comme stratégie à répliquer.
+
+*Rien ici ne constitue un conseil en investissement.*
 
 ## ⚠️ Nature du déploiement en cours : TEST OPÉRATIONNEL, PAS STRATÉGIE VALIDÉE
 
@@ -34,6 +50,26 @@ produit par `scripts/reconcile.py`.
 - Export quotidien des positions : `data/live/export_YYYY-MM-DD.json`
   (`scripts/daily_export.py`)
 - Réconciliation trades réels vs backtest même période : `scripts/reconcile.py`
+
+## Structure du dépôt
+
+| Chemin | Contenu |
+|---|---|
+| [RAPPORT.md](RAPPORT.md) | Rapport final du cycle 1 : verdict, métriques, walk-forward, puissance, limites |
+| [HYPOTHESES.md](HYPOTHESES.md) | Registre pré-enregistré (append-only) : 7 candidates, règles exactes, prédictions décotées |
+| [JOURNAL.md](JOURNAL.md) | Journal horodaté append-only de toutes les actions, erreurs et tentations incluses |
+| [DEVIATION.md](DEVIATION.md) / [SECURITE_CLES_API.md](SECURITE_CLES_API.md) | Écarts déploiement/testé ; checklist sécurité des clés |
+| [dashboard.html](dashboard.html) | Dashboard autonome (ouvrir localement dans un navigateur) |
+| `docs/` | Phase 1 : revue de littérature (mécanismes économiques par famille) |
+| `user_data/strategies/` | Les 7 stratégies, fidèles au registre, 0 paramètre hyperoptable |
+| `scripts/` | Univers mécanique, téléchargement (garde anti-scellé), essais, métriques/DSR, walk-forward, puissance, kill-switch, réconciliation |
+| `data/universe/`, `data/metrics/` | Univers figé, couverture des données, métriques mécaniques |
+| `reference/*.md` | Analyses des moteurs (simplifications du backtester, signatures d'overfit, comparaison Nautilus) |
+| `config_backtest.json` / `config_dryrun.json` | Configurations (dry-run par défaut, aucune clé) |
+
+Reproduction : Python 3.12, `pip install -r requirements.txt`, puis
+`scripts/download_data.py` (données publiques data.binance.vision) et
+`scripts/run_trials.py`. Les données de marché et `.env` ne sont pas dans le dépôt.
 
 ## Artefacts du cycle 1 (clos)
 [RAPPORT.md](RAPPORT.md) · [dashboard.html](dashboard.html) ·
