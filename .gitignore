@@ -28,3 +28,5 @@ KILLSWITCH_TRIPPED
 # Divers
 .pytest_cache/
 *.log
+data/universe/run_log.txt
+data/universe/download_log.txt
